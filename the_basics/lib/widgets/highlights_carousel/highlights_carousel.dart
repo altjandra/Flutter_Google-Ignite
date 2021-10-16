@@ -3,14 +3,14 @@ import 'package:responsive_builder/responsive_builder.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
-class DestinationCarousel extends StatefulWidget {
+class HighlightsCarousel extends StatefulWidget {
   // const DestinationCarousel({required Key key}) : super(key: key);
 
   @override
-  _DestinationCarouselState createState() => _DestinationCarouselState();
+  _HighlightsCarouselState createState() => _HighlightsCarouselState();
 }
 
-class _DestinationCarouselState extends State<DestinationCarousel> {
+class _HighlightsCarouselState extends State<HighlightsCarousel> {
 
   final CarouselController _controller = CarouselController();
 
@@ -32,7 +32,7 @@ class _DestinationCarouselState extends State<DestinationCarousel> {
     'ASIA',
     'AFRICA',
     'EUROPE',
-    'SOUTH AMERICA',
+    'AMERICA',
     'AUSTRALIA',
     'ANTARCTICA',
   ];
@@ -58,37 +58,40 @@ class _DestinationCarouselState extends State<DestinationCarousel> {
                 )
       ),
   
-      Container(
-      color: Colors.white,
-      // padding: const EdgeInsets.only(top:150),
-      child: Stack(
-        children: [
-          CarouselSlider(items: generateImagesTiles() , 
-          options: CarouselOptions(
-            enlargeCenterPage:true,
-            autoPlay: true,
-            aspectRatio: 18/8,
-            onPageChanged: (index, other){
-              setState(() {
-                _current = index;
-              });
-            }
-          )),
-          AspectRatio(aspectRatio: 18/8,
-          child:Center(
-            child:Text(
-              places[_current],
-              style: TextStyle(
-                decoration: TextDecoration.none,
-                color: Colors.white,
-                fontSize: MediaQuery.of(context).size.width/15
-              ),
+      Padding(
+        padding: const EdgeInsets.only(bottom:160),
+        child: Container(
+        color: Colors.white,
+        // padding: const EdgeInsets.only(top:150),
+        child: Stack(
+          children: [
+            CarouselSlider(items: generateImagesTiles() , 
+            options: CarouselOptions(
+              enlargeCenterPage:true,
+              autoPlay: true,
+              aspectRatio: 18/8,
+              onPageChanged: (index, other){
+                setState(() {
+                  _current = index;
+                });
+              }
+            )),
+            AspectRatio(aspectRatio: 18/8,
+            child:Center(
+              child:Text(
+                places[_current],
+                style: TextStyle(
+                  decoration: TextDecoration.none,
+                  color: Colors.white,
+                  fontSize: MediaQuery.of(context).size.width/15
+                ),
+              )
             )
-          )
-          )
-        ]
-      )
-    )    
+            )
+          ]
+        )
+    ),
+      )    
   ]
 );
     // Container(
