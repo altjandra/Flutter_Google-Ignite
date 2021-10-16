@@ -1,6 +1,7 @@
 # the_basics
 
-A new Flutter project.
+A new Flutter project for GI
+
 
 ## Getting Started
 
