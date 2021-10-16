@@ -7,21 +7,25 @@ class CallToActionMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 60,
-      alignment: Alignment.center,
-      child: Text(
-        title,
-        style: TextStyle(
-          fontSize: 18,
-          fontWeight: FontWeight.w800,
-          color: Colors.white,
-        ),
-      ),
-      decoration: BoxDecoration(
-        color: primaryColor,
-        borderRadius: BorderRadius.circular(5),
-      ),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: Image(image: AssetImage('assets/landingPage.png')),
     );
+    // return Container(
+    //   height: 60,
+    //   alignment: Alignment.center,
+    //   child: Text(
+    //     title,
+    //     style: TextStyle(
+    //       fontSize: 18,
+    //       fontWeight: FontWeight.w800,
+    //       color: Colors.white,
+    //     ),
+    //   ),
+    //   decoration: BoxDecoration(
+    //     color: primaryColor,
+    //     borderRadius: BorderRadius.circular(5),
+    //   ),
+    // );
   }
 }

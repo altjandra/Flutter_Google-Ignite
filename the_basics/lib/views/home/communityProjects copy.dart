@@ -2,7 +2,22 @@ import 'package:flutter/material.dart';
 
 class communityProjectCard  extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) => ListView(
+    padding: EdgeInsets.all(16),
+    children: [
+      buildCards(),
+    ],
+  );
+
+  Widget buildCards() => Row(
+    children: [
+      buildCard(),
+      buildCard(),
+    ],
+  );
+
+  
+  Widget buildCard() {
     return SizedBox(
       width: 200.0,
       height: 300.0,
@@ -59,7 +74,6 @@ class communityProjectCard  extends StatelessWidget {
               )
             ],
           ),
-        
       ),
     );
   }
