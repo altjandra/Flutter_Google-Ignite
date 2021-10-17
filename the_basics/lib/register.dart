@@ -15,30 +15,20 @@ class Register extends StatefulWidget {
 class _RegisterState extends State<Register> {
   final _formKey = GlobalKey<FormState>();
   User user = User("", "");
-  String url = "http://localhost:8081/api/user/getAll";
+  String url = "http://localhost:8001/register";
 
-  Future<http.Response> get() async {
-    print("getting");
-    return http.get(url);
-    // var res = await http.get(url);
-    //     // body: json.encode({'email': user.email, 'password': user.password}));
-    // print("SENT");
-    // print(res.body);
-    // if (res.body != null) {
-    //   Navigator.pop(context);
-    // }
+
+
+  Future save() async {
+    var res = await http.post(url,
+        headers: {'Content-Type': 'application/json'},
+        body: json.encode({'email': user.email, 'password': user.password}));
+    print("SENT");
+    print(res.body);
+    if (res.body != null) {
+      Navigator.pop(context);
+    }
   }
-
-  // Future save() async {
-  //   var res = await http.post(url,
-  //       headers: {'Content-Type': 'application/json'},
-  //       body: json.encode({'email': user.email, 'password': user.password}));
-  //   print("SENT");
-  //   print(res.body);
-  //   if (res.body != null) {
-  //     Navigator.pop(context);
-  //   }
-  // }
 
   @override
   Widget build(BuildContext context) {
@@ -46,50 +36,63 @@ class _RegisterState extends State<Register> {
       body: SingleChildScrollView(
         child: Form(
             key: _formKey,
-            child: Column(
+            child:
+
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
+
                 Container(
-                  height: 750,
-                  width: MediaQuery.of(context).size.width,
-                  decoration: BoxDecoration(
-                    color: Color.fromRGBO(233, 65, 82, 1),
-                    boxShadow: [
-                      BoxShadow(
-                          blurRadius: 10,
-                          color: Colors.black,
-                          offset: Offset(1, 5))
-                    ],
-                    borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(80),
-                        bottomRight: Radius.circular(20)),
-                  ),
+                  // height: 750,
+                  // width: MediaQuery.of(context).size.width / 2,
+                  // decoration: BoxDecoration(
+                  //   color: Colors.blue,
+                  //   boxShadow: [
+                  //     BoxShadow(
+                  //         blurRadius: 10,
+                  //         color: Colors.black,
+                  //         offset: Offset(1, 5))
+                  //   ],
+                  //   borderRadius: BorderRadius.only(
+                  //       bottomLeft: Radius.circular(80),
+                  //       bottomRight: Radius.circular(20)),
+                  // ),
+
+
+
+
+
+
                   child: Padding(
-                    padding: const EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
                     child: Column(
                       children: [
                         SizedBox(
-                          height: 100,
+                          height: 60,
                         ),
                         Text("Register",
-                            style: GoogleFonts.pacifico(
+                            style: GoogleFonts.montserrat(
                               fontWeight: FontWeight.bold,
                               fontSize: 50,
-                              color: Colors.white,
+                              color: Colors.black,
                             )),
                         SizedBox(
                           height: 30,
                         ),
                         Align(
-                          alignment: Alignment.topLeft,
+                          alignment: Alignment.center,
                           child: Text(
                             "Email",
                             style: GoogleFonts.roboto(
-                              // fontWeight: FontWeight.bold,
-                              fontSize: 40,
-                              color: Color.fromRGBO(255, 255, 255, 0.8),
+                              fontWeight: FontWeight.bold,
+                              fontSize: 30,
+                              color: Colors.black
                             ),
                           ),
                         ),
+
+
+                    Padding(padding: EdgeInsets.symmetric(horizontal:150),child:
                         TextFormField(
                           controller: TextEditingController(text: user.email),
                           onChanged: (val) {
@@ -105,9 +108,15 @@ class _RegisterState extends State<Register> {
                           decoration: InputDecoration(
                               errorStyle:
                               TextStyle(fontSize: 20, color: Colors.black),
-                              border: OutlineInputBorder(
-                                  borderSide: BorderSide.none)),
-                        ),
+                              // border: OutlineInputBorder(
+                              //     borderSide: BorderSide.none)
+                                ),
+                        )),
+
+
+
+
+
                         Container(
                           height: 8,
                           color: Color.fromRGBO(255, 255, 255, 0.4),
@@ -116,16 +125,20 @@ class _RegisterState extends State<Register> {
                           height: 60,
                         ),
                         Align(
-                          alignment: Alignment.topLeft,
+                          alignment: Alignment.center,
                           child: Text(
                             "Password",
                             style: GoogleFonts.roboto(
-                              // fontWeight: FontWeight.bold,
-                              fontSize: 40,
-                              color: Color.fromRGBO(255, 255, 255, 0.8),
+                              fontWeight: FontWeight.bold,
+                              fontSize: 30,
+                              color: Colors.black,
                             ),
                           ),
                         ),
+
+
+
+                    Padding(padding: EdgeInsets.symmetric(horizontal:150),child:
                         TextFormField(
                           obscureText: true,
                           controller:
@@ -143,9 +156,10 @@ class _RegisterState extends State<Register> {
                           decoration: InputDecoration(
                               errorStyle:
                               TextStyle(fontSize: 20, color: Colors.black),
-                              border: OutlineInputBorder(
-                                  borderSide: BorderSide.none)),
-                        ),
+                              // border: OutlineInputBorder(
+                              //     borderSide: BorderSide.none)
+                            ),
+                        )),
                         Container(
                           height: 8,
                           color: Color.fromRGBO(255, 255, 255, 0.4),
@@ -163,7 +177,7 @@ class _RegisterState extends State<Register> {
                               style: GoogleFonts.roboto(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 20,
-                                  color: Colors.white),
+                                  color: Colors.black),
                             ),
                           ),
                         )
@@ -171,9 +185,14 @@ class _RegisterState extends State<Register> {
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 40,
-                ),
+                // SizedBox(
+                //   height: 40,
+                // ),
+                //
+                //
+
+
+
                 Container(
                   height: 90,
                   width: 90,
@@ -181,10 +200,8 @@ class _RegisterState extends State<Register> {
                       color: Color.fromRGBO(233, 65, 82, 1),
 
                       onPressed: () {
-                        print("HERE");
-                        // get();
                         if (_formKey.currentState.validate()) {
-                          get();
+                          save();
                         }
                       },
                       shape: RoundedRectangleBorder(
@@ -194,10 +211,19 @@ class _RegisterState extends State<Register> {
                         color: Colors.white,
                         size: 30,
                       )),
-                )
+                ),
+
+
               ],
-            )),
+
+            ),
+
+
+            ),
       ),
-    );
+            );
+
+
+
   }
 }

@@ -17,7 +17,7 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
   final _formKey = GlobalKey<FormState>();
   User user = User("", "");
-  String url = "http://localhost:8080/login";
+  String url = "http://localhost:8001/login";
 
   Future save() async {
     var res = await http.post(url,
@@ -43,19 +43,20 @@ class _LoginState extends State<Login> {
               children: [
                 Container(
                   height: 750,
-                  width: MediaQuery.of(context).size.width,
-                  decoration: BoxDecoration(
-                    color: Color.fromRGBO(233, 65, 82, 1),
-                    boxShadow: [
-                      BoxShadow(
-                          blurRadius: 10,
-                          color: Colors.black,
-                          offset: Offset(1, 5))
-                    ],
-                    borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(80),
-                        bottomRight: Radius.circular(20)),
-                  ),
+                  alignment :Alignment.center,
+
+                  // decoration: BoxDecoration(
+                  //   color: Color.fromRGBO(233, 65, 82, 1),
+                  //   boxShadow: [
+                  //     BoxShadow(
+                  //         blurRadius: 10,
+                  //         color: Colors.black,
+                  //         offset: Offset(1, 5))
+                  //   ],
+                  //   borderRadius: BorderRadius.only(
+                  //       bottomLeft: Radius.circular(80),
+                  //       bottomRight: Radius.circular(20)),
+                  // ),
                   child: Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Column(
@@ -64,26 +65,28 @@ class _LoginState extends State<Login> {
                           height: 100,
                         ),
                         Text("Login",
-                            style: GoogleFonts.pacifico(
+                            style: GoogleFonts.montserrat(
                               fontWeight: FontWeight.bold,
-                              fontSize: 50,
-                              color: Colors.white,
+                              fontSize: 60,
+                              color: Colors.black,
                             )),
                         SizedBox(
                           height: 30,
                         ),
                         Align(
-                          alignment: Alignment.topLeft,
+                          alignment: Alignment.center,
                           child: Text(
                             "Email",
                             style: GoogleFonts.roboto(
                               // fontWeight: FontWeight.bold,
-                              fontSize: 40,
-                              color: Color.fromRGBO(255, 255, 255, 0.8),
+                              fontSize: 30,
+                              color: Colors.black
                             ),
                           ),
                         ),
+                      Padding(padding: EdgeInsets.symmetric(horizontal:150),child:
                         TextFormField(
+                          // alignment:Alignment.center,
                           controller: TextEditingController(text: user.email),
                           onChanged: (val) {
                             user.email = val;
@@ -94,13 +97,13 @@ class _LoginState extends State<Login> {
                             }
                             return null;
                           },
-                          style: TextStyle(fontSize: 30, color: Colors.white),
+                          style: TextStyle(fontSize: 30, color: Colors.black),
                           decoration: InputDecoration(
-                              errorStyle:
-                              TextStyle(fontSize: 20, color: Colors.black),
-                              border: OutlineInputBorder(
-                                  borderSide: BorderSide.none)),
-                        ),
+                              errorStyle: TextStyle(fontSize: 20, color: Colors.black)
+                              // border: OutlineInputBorder(
+                              //     borderSide: BorderSide.none)
+                            ),
+                        )),
                         Container(
                           height: 8,
                           color: Color.fromRGBO(255, 255, 255, 0.4),
@@ -109,16 +112,18 @@ class _LoginState extends State<Login> {
                           height: 60,
                         ),
                         Align(
-                          alignment: Alignment.topLeft,
+                          alignment: Alignment.center,
                           child: Text(
                             "Password",
                             style: GoogleFonts.roboto(
                               // fontWeight: FontWeight.bold,
-                              fontSize: 40,
-                              color: Color.fromRGBO(255, 255, 255, 0.8),
+                              fontSize: 30,
+                              color: Colors.black,
                             ),
                           ),
                         ),
+                      Padding(padding: EdgeInsets.symmetric(horizontal:150),child:
+
                         TextFormField(
                           obscureText: true,
                           controller:
@@ -132,13 +137,14 @@ class _LoginState extends State<Login> {
                             }
                             return null;
                           },
-                          style: TextStyle(fontSize: 30, color: Colors.white),
+                          style: TextStyle(fontSize: 30, color: Colors.black),
                           decoration: const InputDecoration(
                               errorStyle:
                               TextStyle(fontSize: 20, color: Colors.black),
-                              border: OutlineInputBorder(
-                                  borderSide: BorderSide.none)),
-                        ),
+                              // border: OutlineInputBorder(
+                              //     borderSide: BorderSide.none)
+                                ),
+                        )),
                         Container(
                           height: 8,
                           color: Color.fromRGBO(255, 255, 255, 0.4),
@@ -146,7 +152,8 @@ class _LoginState extends State<Login> {
                         const SizedBox(
                           height: 60,
                         ),
-                        Center(
+
+                        Container(
                           child: InkWell(
                             onTap: () {
                               Navigator.push(
@@ -159,7 +166,7 @@ class _LoginState extends State<Login> {
                               style: GoogleFonts.roboto(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 20,
-                                  color: Colors.white),
+                                  color: Colors.black),
                             ),
                           ),
                         )
