@@ -4,10 +4,10 @@ import 'package:the_basics/widgets/community_projects/communityProjects.dart';
 import 'package:the_basics/views/home/home_content_desktop.dart';
 import 'package:the_basics/views/home/home_content_mobile.dart';
 import 'package:the_basics/widgets/centered_view/centered_view.dart';
-import 'package:the_basics/widgets/navigation_bar/navigation_bar.dart';
-import 'package:the_basics/widgets/navigation_drawer/navigation_drawer.dart';
+import 'package:the_basics/widgets/new_navigation/nav_bar.dart';
+// import 'package:the_basics/widgets/navigation_drawer/navigation_drawer.dart';
 // import 'package:the_basics/widgets/highlight_projects/highlight_projects.dart';
-import 'package:the_basics/widgets/navigation_drawer/navigation_drawer.dart';
+// import 'package:the_basics/widgets/navigation_drawer/navigation_drawer.dart';
 import 'package:the_basics/widgets/highlights_carousel/highlights_carousel.dart';
 import 'package:the_basics/widgets/community_projects_display/community_projects_display.dart';
 
@@ -18,15 +18,15 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) => Scaffold(
-        drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile
-            ? NavigationDrawer()
-            : null,
+        // drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile //consider removing this 
+        //     ? NavigationDrawer()
+        //     : null,
         backgroundColor: Colors.white,
         body: CenteredView(
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
-                NavigationBar(),
+                // NavigationBar(), //edit this for the nav bar 
                 Container(
                   color: Colors.teal,
                   child: Padding( //  vertical: 20.0, horizontal: 40.0
