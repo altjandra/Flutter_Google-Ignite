@@ -79,6 +79,8 @@ flutter:
       - assets/north_america.jpg
       - assets/south_america.jpg
       - assets/google_fonts/
+      - assets/pexels-fauxels-3183150.jpg
+      - assets/pexels-fauxels-3184639.jpg
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

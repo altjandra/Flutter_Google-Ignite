@@ -21,7 +21,7 @@ class HomeView extends StatelessWidget {
         // drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile //consider removing this 
         //     ? NavigationDrawer()
         //     : null,
-        backgroundColor: Colors.white,
+        backgroundColor:Colors.white,
 
         body: SafeArea(
 
@@ -45,7 +45,6 @@ class HomeView extends StatelessWidget {
                 //   width: double.infinity,
                   // width: MediaQuery.of(context).size.width,
                   // height: MediaQuery.of(context).size.height,
-
               Container(
                   color: Color(0XffD6F3FB),
                   child: Padding( //  vertical: 20.0, horizontal: 40.0
@@ -53,12 +52,7 @@ class HomeView extends StatelessWidget {
                   child: ScreenTypeLayout(
                   mobile: HomeContentMobile(),
                   desktop: HomeContentDesktop(),
-                )
-
-
-
-
-                  ),
+                )),
                 ),
                 // Padding( //  vertical: 20.0, horizontal: 40.0
                 //   padding: const EdgeInsets.symmetric(vertical: 150.0),
