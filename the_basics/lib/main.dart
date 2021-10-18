@@ -5,7 +5,8 @@ import 'dart:math';
 //above were added
 import 'package:flutter/material.dart';
 import 'package:the_basics/views/home/home_view.dart';
-
+import 'dashboard.dart';
+import 'login.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -21,12 +22,14 @@ class MyApp extends StatelessWidget {
       builder: (_, child) => AppView(
         child: child,
       ),
+
       home: HomeView(),
 
       //need to set up the navigation here 
       initialRoute: routeCareerGuidance,
       navigatorKey: navKey,
       onGenerateRoute: RouteGenerator.generateRoute,
+
     );
   }
 }
