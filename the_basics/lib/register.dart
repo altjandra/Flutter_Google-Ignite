@@ -104,7 +104,7 @@ class _RegisterState extends State<Register> {
                             }
                             return null;
                           },
-                          style: TextStyle(fontSize: 30, color: Colors.white),
+                          style: TextStyle(fontSize: 30, color: Colors.black),
                           decoration: InputDecoration(
                               errorStyle:
                               TextStyle(fontSize: 20, color: Colors.black),
@@ -152,7 +152,7 @@ class _RegisterState extends State<Register> {
                             }
                             return null;
                           },
-                          style: TextStyle(fontSize: 30, color: Colors.white),
+                          style: TextStyle(fontSize: 30, color: Colors.black),
                           decoration: InputDecoration(
                               errorStyle:
                               TextStyle(fontSize: 20, color: Colors.black),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:the_basics/views/profile/ProfileUI2.dart';
 
 import 'navbar_item.dart';
 import 'navbar_logo.dart';
@@ -33,9 +34,16 @@ class NavigationBarTabletDesktop extends StatelessWidget {
                   color: Colors.blue,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                    onPressed: (){},
+                    onPressed:(){
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //       builder: (context) => ProfileUI2(),
+                      //     ));
+
+                    },
                     child: Text(
-                      "Log In",
+                      "Profile",
                       style: TextStyle(color: Colors.white),
                     ),
                 )

@@ -3,6 +3,23 @@ import 'package:flutter/material.dart';
 import 'package:the_basics/widgets/community_projects_display/community_projects_display.dart';
 
 class ProfileUI2 extends StatelessWidget {
+
+  // final _formKey = GlobalKey<FormState>();
+  // User user = User("", "");
+  // String url = "http://localhost:8001/register";
+  //
+  //
+  //
+  // Future save() async {
+  //   var res = await http.post(url,
+  //       headers: {'Content-Type': 'application/json'},
+  //       body: json.encode({'email': user.email, 'password': user.password}));
+  //   print("SENT");
+  //   print(res.body);
+  //   if (res.body != null) {
+  //     Navigator.pop(context);
+  //   }
+  // }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -74,7 +91,11 @@ class ProfileUI2 extends StatelessWidget {
               height: 10,
             ),
              RaisedButton(
-              onPressed: () {},
+              onPressed: () {
+
+
+
+              },
               padding: EdgeInsets.zero,
               shape: RoundedRectangleBorder(),
               child: Container(

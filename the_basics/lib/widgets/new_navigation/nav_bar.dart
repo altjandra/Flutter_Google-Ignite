@@ -132,8 +132,8 @@ class _NavigationBarState extends State<NavigationBar> {
           ),
           NavigationItem(
             selected: index == 3,
-            title: 'SignUp',
-            routeName: routeSignUp,
+            title: 'Profile',
+            routeName: routeProfile,
             onHighlight: onHighlight,
           ),
         ],
@@ -152,7 +152,7 @@ class _NavigationBarState extends State<NavigationBar> {
       case routeMentoring:
         changeHighlight(2);
         break;
-      case routeSignUp:
+      case routeProfile:
         changeHighlight(3);
         break;
     }

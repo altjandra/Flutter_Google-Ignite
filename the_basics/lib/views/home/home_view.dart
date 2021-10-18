@@ -22,19 +22,43 @@ class HomeView extends StatelessWidget {
         //     ? NavigationDrawer()
         //     : null,
         backgroundColor: Colors.white,
-        body: CenteredView(
+
+        body: SafeArea(
+
           child: SingleChildScrollView(
+
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+
               children: <Widget>[
-                // NavigationBar(), //edit this for the nav bar 
-                Container(
-                  color: Colors.teal,
+                // NavigationBar(), //edit this for the nav bar
+
+                // Container(
+                //   decoration: BoxDecoration(
+                //       image: DecorationImage(
+                //       image: NetworkImage(
+                //               "https://images.unsplash.com/photo-1579202673506-ca3ce28943ef"
+                //           ),
+                //       fit: BoxFit.cover
+                //   )
+                //   width: double.infinity,
+                  // width: MediaQuery.of(context).size.width,
+                  // height: MediaQuery.of(context).size.height,
+
+              Container(
+                  color: Color(0XffD6F3FB),
                   child: Padding( //  vertical: 20.0, horizontal: 40.0
-                  padding: const EdgeInsets.symmetric(vertical: 150.0),
+                   padding: const EdgeInsets.symmetric(vertical: 150.0),
                   child: ScreenTypeLayout(
                   mobile: HomeContentMobile(),
                   desktop: HomeContentDesktop(),
-                )),
+                )
+
+
+
+
+                  ),
                 ),
                 // Padding( //  vertical: 20.0, horizontal: 40.0
                 //   padding: const EdgeInsets.symmetric(vertical: 150.0),
@@ -44,8 +68,8 @@ class HomeView extends StatelessWidget {
                 // )),
                 HighlightsCarousel(),
                 CommunityProjectsDisplay()
-                
-                
+
+
                 // HighlightProjects(),
                 // ScreenTypeLayout(
                 //   mobile: HomeContentMobile(),

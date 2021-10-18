@@ -57,7 +57,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.1"
-
   csslib:
     dependency: transitive
     description:
@@ -65,7 +64,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.17.1"
-
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -111,7 +109,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-<<<<<<< HEAD
   google_fonts:
     dependency: "direct main"
     description:
@@ -119,6 +116,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.2"
+  html:
+    dependency: transitive
+    description:
+      name: html
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.15.0"
   http:
     dependency: "direct main"
     description:
@@ -133,15 +137,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.1.4"
-=======
-  html:
-    dependency: transitive
-    description:
-      name: html
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.15.0"
->>>>>>> c0d7067386d4c36fb11b92bedfe650c9a67b6e5e
   lints:
     dependency: transitive
     description:
