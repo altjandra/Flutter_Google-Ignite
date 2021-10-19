@@ -74,7 +74,7 @@ class communityProjectCard  extends StatelessWidget {
               Row(
                 children: [
                   Container(
-                    alignment: Alignment(-0.9,1.0),
+                    padding: EdgeInsets.only(left: 25.0),
                     child: CircleAvatar(
                       backgroundImage: NetworkImage(
                           "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1327&q=80"
@@ -82,20 +82,22 @@ class communityProjectCard  extends StatelessWidget {
                       radius: 30.0,
                     ),
                   ),
-                Column(children: <Widget> [
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Container(
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget> [  
+                    Container(
                       child: Text("Samuel Goh", style: TextStyle(
                     color: Colors.black,
-                    decoration: TextDecoration.underline)))), 
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Container(
+                    decoration: TextDecoration.underline))), 
+                    Container(
                       child: Text("Submitted 5 mins ago", style: TextStyle(
                     color: Colors.grey,
-                    fontStyle: FontStyle.italic)))),
-                  ]
+                    fontStyle: FontStyle.italic))),
+                    ]
+                  ),
                 ),
                 
                 ]
