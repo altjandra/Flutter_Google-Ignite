@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart'; //for IOS app 
 import 'package:flutter/material.dart'; //some essestial flutter library
-import 'package:the_basics/Mentoring.dart';
+
+// import 'package:the_basics/Mentoring.dart';
+import 'package:the_basics/views/mentoring/Mentoring.dart';
 
 import 'package:the_basics/login.dart';
 import 'package:the_basics/routes/routes.dart'; 

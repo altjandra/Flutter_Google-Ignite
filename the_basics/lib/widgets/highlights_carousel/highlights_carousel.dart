@@ -94,37 +94,5 @@ class _HighlightsCarouselState extends State<HighlightsCarousel> {
       )    
   ]
 );
-    // Container(
-    //   color: Colors.grey,
-    //   padding: const EdgeInsets.only(top:150),
-    //   child: Stack(
-    //     children: [
-    //       CarouselSlider(items: generateImagesTiles() , 
-    //       options: CarouselOptions(
-    //         enlargeCenterPage:true,
-    //         autoPlay: true,
-    //         aspectRatio: 18/8,
-    //         onPageChanged: (index, other){
-    //           setState(() {
-    //             _current = index;
-    //           });
-    //         }
-    //       )),
-    //       AspectRatio(aspectRatio: 18/8,
-    //       child:Center(
-    //         child:Text(
-    //           places[_current],
-    //           style: TextStyle(
-    //             decoration: TextDecoration.none,
-    //             color: Colors.white,
-    //             fontSize: MediaQuery.of(context).size.width/15
-    //           ),
-    //         )
-    //       )
-    //       )
-    //     ]
-    //   )
-
-    // );
   }
 }

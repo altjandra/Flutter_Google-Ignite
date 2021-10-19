@@ -1,8 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:the_basics/widgets/community_projects/communityProjects.dart';
-import 'package:the_basics/widgets/community_projects_display/community_projects_display.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:the_basics/widgets/coach_card/coach_card.dart';
+// import 'package:the_basics/widgets/coach_card/style_card.dart';
+
+
+
 class Mentoring extends StatelessWidget {
 
   // final _formKey = GlobalKey<FormState>();
@@ -60,56 +63,37 @@ class Mentoring extends StatelessWidget {
                 SizedBox(
                   height: 30,
                 ),
-                // Container(child:
-                // Row(
-                //   children:[
-                //     Container(
-                //
-                //       child: InkWell(
-                //         onTap: () {},
-                //         child: Text(
-                //           "Bookmarked",
-                //           style: GoogleFonts.roboto(
-                //               fontWeight: FontWeight.bold,
-                //               fontSize: 20,
-                //               color: Colors.black),
-                //         ),
-                //       ),
-                //     )
-                //   ]
-                //
-                // )
-                // ),
+          
               Container(child:
                Row(
                   children: [
-                    Expanded(child: communityProjectCard()),
+                    Expanded(child: coachCard()),
                     const SizedBox(width: 12),
-                    Expanded(child: communityProjectCard()),
+                    Expanded(child: coachCard()),
                     const SizedBox(width: 12),
-                    Expanded(child: communityProjectCard()),]
+                    Expanded(child: coachCard()),]
 
                 )
                ),
                 Container(child:
                 Row(
                     children: [
-                      Expanded(child: communityProjectCard()),
+                      Expanded(child: coachCard()),
                       const SizedBox(width: 12),
-                      Expanded(child: communityProjectCard()),
+                      Expanded(child: coachCard()),
                       const SizedBox(width: 12),
-                      Expanded(child: communityProjectCard()),]
+                      Expanded(child: coachCard()),]
 
                 )
                 ),
                 Container(child:
                 Row(
                     children: [
-                      Expanded(child: communityProjectCard()),
+                      Expanded(child: coachCard()),
                       const SizedBox(width: 12),
-                      Expanded(child: communityProjectCard()),
+                      Expanded(child: coachCard()),
                       const SizedBox(width: 12),
-                      Expanded(child: communityProjectCard()),]
+                      Expanded(child: coachCard()),]
 
                 )
                 )
