@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/services.dart';
 import 'package:the_basics/views/home/home_view.dart';
 
 import 'dashboard.dart';
@@ -20,6 +21,9 @@ class _LoginState extends State<Login> {
   final _formKey = GlobalKey<FormState>();
   User user = User("", "");
   String url = "http://localhost:8001/login";
+
+  Future hideBar() async=>
+      SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.top]);
 
   Future save() async {
     var res = await http.post(url,
@@ -130,7 +134,7 @@ class _LoginState extends State<Login> {
                             }
                             return null;
                           },
-                          style: TextStyle(fontSize: 30, color: Colors.white),
+                          style: TextStyle(fontSize: 30, color: Colors.grey),
                           // decoration: InputDecoration(
                           //     errorStyle: TextStyle(fontSize: 20, color: Colors.white)
                           //     // border: OutlineInputBorder(
@@ -181,7 +185,7 @@ class _LoginState extends State<Login> {
                             }
                             return null;
                           },
-                          style: TextStyle(fontSize: 30, color: Colors.white),
+                          style: TextStyle(fontSize: 30, color: Colors.grey),
                           // decoration: const InputDecoration(
                           //     errorStyle:
                           //     TextStyle(fontSize: 20, color: Colors.white),

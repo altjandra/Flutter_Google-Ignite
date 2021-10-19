@@ -2,12 +2,9 @@ import 'package:the_basics/app_view.dart';
 import 'package:the_basics/routes/router_generator.dart';
 import 'package:the_basics/routes/routes.dart';
 import 'dart:math';
-//above were added
+
 import 'package:flutter/material.dart';
-import 'package:the_basics/views/home/home_view.dart';
-import 'package:the_basics/views/profile/ProfileUI2.dart';
-import 'dashboard.dart';
-import 'login.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -24,11 +21,8 @@ class MyApp extends StatelessWidget {
         child: child,
       ),
       //
-      // home: HomeView(),
-      // home:ProfileUI2(),
+
       initialRoute: routeLogin,
-      //need to set up the navigation here
-      // initialRoute: routeCareerGuidance,
       navigatorKey: navKey,
       onGenerateRoute: RouteGenerator.generateRoute,
 

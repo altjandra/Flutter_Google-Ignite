@@ -32,6 +32,7 @@ class _RegisterState extends State<Register> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       body: SingleChildScrollView(
         child: Form(
@@ -108,7 +109,7 @@ class _RegisterState extends State<Register> {
                     }
                     return null;
                   },
-                  style: TextStyle(fontSize: 30, color: Colors.black),
+                  style: TextStyle(fontSize: 30, color: Colors.grey),
                   // decoration: InputDecoration(
                   //     errorStyle: TextStyle(fontSize: 20, color: Colors.white)
                   //     // border: OutlineInputBorder(
@@ -159,7 +160,7 @@ class _RegisterState extends State<Register> {
                     }
                     return null;
                   },
-                  style: TextStyle(fontSize: 30, color: Colors.black),
+                  style: TextStyle(fontSize: 30, color: Colors.grey),
 
                 )),
                   const SizedBox(
