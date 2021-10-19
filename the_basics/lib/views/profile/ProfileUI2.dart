@@ -1,10 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 import 'package:the_basics/widgets/community_projects/communityProjects.dart';
 import 'package:the_basics/widgets/community_projects/communityProjects2.dart';
 import 'package:the_basics/widgets/community_projects/communityProjects3.dart';
 import 'package:the_basics/widgets/community_projects_display/community_projects_display.dart';
+import 'package:the_basics/widgets/profile_projects/profile_projects_display.dart';
+
 
 class ProfileUI2 extends StatelessWidget {
 
@@ -59,17 +62,27 @@ class ProfileUI2 extends StatelessWidget {
             SizedBox(
               height: 60,
             ),
-            Align(
-              alignment: Alignment.center,
-              child: Text(
-                "Kelly Baker",
-                style: GoogleFonts.montserrat(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 25,
-                    letterSpacing: 2.0,
-                    color: Colors.black
-                ),
-              ),
+
+            // Align(
+            //   alignment: Alignment.center,
+            //   child: Text(
+            //     "Kelly Baker",
+            //     style: GoogleFonts.montserrat(
+            //         fontWeight: FontWeight.bold,
+            //         fontSize: 25,
+            //         letterSpacing: 2.0,
+            //         color: Colors.black
+            //     ),
+            //   ),
+
+            Text(
+              "Rajat Palankar"
+              ,style: TextStyle(
+                fontSize: 25.0,
+                color:Colors.blueGrey,
+                fontWeight: FontWeight.bold
+            ),
+
             ),
             // Text(
             //   "Rajat Palankar"
@@ -83,6 +96,7 @@ class ProfileUI2 extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
+
             Align(
             alignment: Alignment.center,
             child: Text(
@@ -110,6 +124,15 @@ class ProfileUI2 extends StatelessWidget {
                       color: Colors.black
                 ),
               ),
+             ),
+            Text(
+              "My dream is to build a mobile app that can change the world"
+              ,style: TextStyle(
+                fontSize: 15.0,
+                color:Colors.black45,
+                fontWeight: FontWeight.w300
+            ),
+
             ),
             // Text(
             //   "App Developer at XYZ Company"
@@ -126,8 +149,6 @@ class ProfileUI2 extends StatelessWidget {
              RaisedButton(
               onPressed: () {
 
-
-
               },
               padding: EdgeInsets.zero,
               shape: RoundedRectangleBorder(),
@@ -139,14 +160,15 @@ class ProfileUI2 extends StatelessWidget {
                   shape: RoundedRectangleBorder(),
                 ),
                 child: Text(
-                  "Upload New Project",
+                  "Upload New Portfolio",
                   style: TextStyle(color: Colors.white),
                 ),
               ),
             ),
             SizedBox(
-              height: 15,
+              height: 50,
             ),
+
             Text(
               "App Developer || Digital Marketer"
               ,style: TextStyle(
@@ -171,134 +193,13 @@ class ProfileUI2 extends StatelessWidget {
 
             )
             ),
+
+            ProfileProjectsDisplay()
+            
+
             
           ]
-            // Card(
-            //   margin: EdgeInsets.symmetric(horizontal: 20.0,vertical: 8.0),
-            //   child: Padding(
-            //     padding: const EdgeInsets.all(8.0),
-            //     child: Row(
-            //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            //       children: [
-            //         Expanded(
-            //           child: Column(
-            //             children: [
-            //               Text("Project",
-            //                 style: TextStyle(
-            //                     color: Colors.blueAccent,
-            //                     fontSize: 22.0,
-            //                     fontWeight: FontWeight.w600
-            //                 ),),
-            //               SizedBox(
-            //                 height: 7,
-            //               ),
-            //               Text("15",
-            //                 style: TextStyle(
-            //                     color: Colors.black,
-            //                     fontSize: 22.0,
-            //                     fontWeight: FontWeight.w300
-            //                 ),)
-            //             ],
-            //           ),
-            //         ),
-            //         Expanded(
-            //           child:
-            //           Column(
-            //             children: [
-            //               Text("Followers",
-            //                 style: TextStyle(
-            //                     color: Colors.blueAccent,
-            //                     fontSize: 22.0,
-            //                     fontWeight: FontWeight.w600
-            //                 ),),
-            //               SizedBox(
-            //                 height: 7,
-            //               ),
-            //               Text("2000",
-            //                 style: TextStyle(
-            //                     color: Colors.black,
-            //                     fontSize: 22.0,
-            //                     fontWeight: FontWeight.w300
-            //                 ),)
-            //             ],
-            //           ),
-            //         ),
-            //       ],
-            //     ),
-            //   ),
-            // ),
-            // SizedBox(
-            //   height: 50,
-            // ),
-            // Row(
-            //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            //   children: [
-            //     RaisedButton(
-            //       onPressed: (){
-
-            //       },
-            //       shape:  RoundedRectangleBorder(
-            //         borderRadius: BorderRadius.circular(80.0),
-            //       ),
-            //       child: Ink(
-            //         decoration: BoxDecoration(
-            //           gradient: LinearGradient(
-            //               begin: Alignment.centerLeft,
-            //               end: Alignment.centerRight,
-            //               colors: [Colors.pink,Colors.redAccent]
-            //           ),
-            //           borderRadius: BorderRadius.circular(30.0),
-
-            //         ),
-            //         child: Container(
-            //           constraints: BoxConstraints(maxWidth: 100.0,maxHeight: 40.0,),
-            //           alignment: Alignment.center,
-            //           child: Text(
-            //             "Contact me",
-            //             style: TextStyle(
-            //                 color: Colors.white,
-            //                 fontSize: 12.0,
-            //                 letterSpacing: 2.0,
-            //                 fontWeight: FontWeight.w300
-            //             ),
-            //           ),
-            //         ),
-            //       ),
-            //     ),
-            //     RaisedButton(
-            //       onPressed: (){
-
-            //       },
-            //       shape:  RoundedRectangleBorder(
-            //         borderRadius: BorderRadius.circular(80.0),
-            //       ),
-            //       child: Ink(
-            //         decoration: BoxDecoration(
-            //           gradient: LinearGradient(
-            //               begin: Alignment.centerLeft,
-            //               end: Alignment.centerRight,
-            //               colors: [Colors.pink,Colors.redAccent]
-            //           ),
-            //           borderRadius: BorderRadius.circular(80.0),
-
-            //         ),
-            //         child: Container(
-            //           constraints: BoxConstraints(maxWidth: 100.0,maxHeight: 40.0,),
-            //           alignment: Alignment.center,
-            //           child: Text(
-            //             "Portfolio",
-            //             style: TextStyle(
-            //                 color: Colors.white,
-            //                 fontSize: 12.0,
-            //                 letterSpacing: 2.0,
-            //                 fontWeight: FontWeight.w300
-            //             ),
-            //           ),
-            //         ),
-            //       ),
-            //     )
-            //   ],
-            // )
+            
             )
         ),
         ),

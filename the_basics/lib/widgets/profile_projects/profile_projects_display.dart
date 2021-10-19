@@ -1,38 +1,28 @@
 import 'package:flutter/material.dart';  
-import 'package:the_basics/widgets/community_projects/communityProjects.dart';
-import 'package:the_basics/widgets/community_projects/communityProjects2.dart';
-import 'package:the_basics/widgets/community_projects/communityProjects3.dart';
+import 'package:the_basics/widgets/profile_projects/profile_projects.dart';
 
-class CommunityProjectsDisplay extends StatefulWidget {
+class ProfileProjectsDisplay extends StatefulWidget {
   @override
-  _CommunityProjectsDisplayState createState() => _CommunityProjectsDisplayState();
+  _ProfileProjectsDisplayState createState() => _ProfileProjectsDisplayState();
 }
 
-class _CommunityProjectsDisplayState extends State<CommunityProjectsDisplay> {
+class _ProfileProjectsDisplayState extends State<ProfileProjectsDisplay> {
   bool onClick1 = false;
   bool onClick2 = false;
 
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: 
-    [Padding(
-        padding: const EdgeInsets.symmetric(vertical:80),
-        child: Text('Are you looking for...',
-                style: TextStyle(
-                    fontWeight: FontWeight.w800,
-                    height: 0.9,
-                    fontSize: 60),
-                )
-      ),
-      Row(
+    [Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [SizedBox(
         width: 180,
         height: 30,
         child: RaisedButton(
             child:
-              Text("Projects"),
+              Text("My Current Projects"),
             textColor: Colors.black,
             shape: new RoundedRectangleBorder(
             borderRadius: new BorderRadius.circular(15.0),
@@ -67,27 +57,19 @@ class _CommunityProjectsDisplayState extends State<CommunityProjectsDisplay> {
           onClick1 ? Row(
                   children: [
                     const SizedBox(width: 12),
-                    Expanded(child: communityProjectCard()),
+                    Expanded(child: profileProjectCard()),
                     const SizedBox(width: 12),
-                    Expanded(child: communityProjectCard2()),
+                    Expanded(child: profileProjectCard()),
                     const SizedBox(width: 12),
-
-                    Expanded(child: communityProjectCard3()),]
+                    Expanded(child: profileProjectCard()),]
                 ): Row(
                   children: [
-                    Expanded(child: communityProjectCard2()),
-
-                    Expanded(child: communityProjectCard()),
-                    const SizedBox(width: 12)]
-                // ): Row(
-                //   children: [
-                //     const SizedBox(width: 12),
-                //     Expanded(child: communityProjectCard()),
-                //
-                //     const SizedBox(width: 12),
-                //     Expanded(child: communityProjectCard3()),
-                //     const SizedBox(width: 12),
-                //     ]
+                    const SizedBox(width: 12),
+                    Expanded(child: profileProjectCard()),
+                    const SizedBox(width: 12),
+                    Expanded(child: profileProjectCard()),
+                    const SizedBox(width: 12),
+                    ]
                 ),
               )
         ],
