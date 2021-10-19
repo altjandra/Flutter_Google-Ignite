@@ -7,9 +7,9 @@ import 'package:provider/provider.dart';
 import '../../../constants.dart';
 
 class Header extends StatelessWidget {
-  const Header({
-    Key? key,
-  }) : super(key: key);
+  // const Header({
+  //   Key? key,
+  // }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -35,9 +35,9 @@ class Header extends StatelessWidget {
 }
 
 class ProfileCard extends StatelessWidget {
-  const ProfileCard({
-    Key? key,
-  }) : super(key: key);
+  // const ProfileCard({
+  //   Key? key,
+  // }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +53,7 @@ class ProfileCard extends StatelessWidget {
         border: Border.all(color: Colors.white10),
       ),
       child: Row(
-        children: [
+        children: [    
           Image.asset(
             "assets/images/profile_pic.png",
             height: 38,
@@ -72,9 +72,9 @@ class ProfileCard extends StatelessWidget {
 }
 
 class SearchField extends StatelessWidget {
-  const SearchField({
-    Key? key,
-  }) : super(key: key);
+  // const SearchField({
+  //   Key? key,
+  // }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

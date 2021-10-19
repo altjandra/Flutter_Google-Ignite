@@ -5,10 +5,10 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../../constants.dart';
 
 class FileInfoCard extends StatelessWidget {
-  const FileInfoCard({
-    Key? key,
-    required this.info,
-  }) : super(key: key);
+  FileInfoCard({ //removed const
+  //   Key? key,
+    this.info,
+  }); //: super(key: key);
 
   final CloudStorageInfo info;
 
@@ -32,11 +32,11 @@ class FileInfoCard extends StatelessWidget {
                 height: 40,
                 width: 40,
                 decoration: BoxDecoration(
-                  color: info.color!.withOpacity(0.1),
+                  color: info.color.withOpacity(0.1), //deleted info.color!.with...
                   borderRadius: const BorderRadius.all(Radius.circular(10)),
                 ),
                 child: SvgPicture.asset(
-                  info.svgSrc!,
+                  info.svgSrc, //deleted info.svgSrc!
                   color: info.color,
                 ),
               ),
@@ -44,7 +44,7 @@ class FileInfoCard extends StatelessWidget {
             ],
           ),
           Text(
-            info.title!,
+            info.title, //deleted info.title!
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
           ),
@@ -59,14 +59,14 @@ class FileInfoCard extends StatelessWidget {
                 "${info.numOfFiles} Files",
                 style: Theme.of(context)
                     .textTheme
-                    .caption!
+                    .caption //deleted caption!
                     .copyWith(color: Colors.white70),
               ),
               Text(
-                info.totalStorage!,
+                info.totalStorage, //deleted info.totalStorage!
                 style: Theme.of(context)
                     .textTheme
-                    .caption!
+                    .caption //deleted caption!
                     .copyWith(color: Colors.white),
               ),
             ],
@@ -78,14 +78,14 @@ class FileInfoCard extends StatelessWidget {
 }
 
 class ProgressLine extends StatelessWidget {
-  const ProgressLine({
-    Key? key,
+  ProgressLine({ //removed const
+  //   Key? key,
     this.color = primaryColor,
-    required this.percentage,
-  }) : super(key: key);
+    this.percentage,
+  }); //: super(key: key);
 
-  final Color? color;
-  final int? percentage;
+  final Color color;
+  final int percentage;
 
   @override
   Widget build(BuildContext context) {
@@ -95,13 +95,13 @@ class ProgressLine extends StatelessWidget {
           width: double.infinity,
           height: 5,
           decoration: BoxDecoration(
-            color: color!.withOpacity(0.1),
+            color: color.withOpacity(0.1), //deleted color! ....
             borderRadius: BorderRadius.all(Radius.circular(10)),
           ),
         ),
         LayoutBuilder(
           builder: (context, constraints) => Container(
-            width: constraints.maxWidth * (percentage! / 100),
+            width: constraints.maxWidth * (percentage / 100), //deleted percentage! 
             height: 5,
             decoration: BoxDecoration(
               color: color,

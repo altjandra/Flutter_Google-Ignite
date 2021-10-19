@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class SideMenu extends StatelessWidget {
-  const SideMenu({
-    Key? key,
-  }) : super(key: key);
+  // const SideMenu({
+  //   Key? key,
+  // }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -36,26 +36,26 @@ class SideMenu extends StatelessWidget {
             svgSrc: "assets/icons/menu_doc.svg",
             press: () {},
           ),
-        //   DrawerListTile(
-        //     title: "Store",
-        //     svgSrc: "assets/icons/menu_store.svg",
-        //     press: () {},
-        //   ),
-        //   DrawerListTile(
-        //     title: "Notification",
-        //     svgSrc: "assets/icons/menu_notification.svg",
-        //     press: () {},
-        //   ),
-        //   DrawerListTile(
-        //     title: "Profile",
-        //     svgSrc: "assets/icons/menu_profile.svg",
-        //     press: () {},
-        //   ),
-        //   DrawerListTile(
-        //     title: "Settings",
-        //     svgSrc: "assets/icons/menu_setting.svg",
-        //     press: () {},
-        //   ),
+          DrawerListTile(
+            title: "Store",
+            svgSrc: "assets/icons/menu_store.svg",
+            press: () {},
+          ),
+          DrawerListTile(
+            title: "Notification",
+            svgSrc: "assets/icons/menu_notification.svg",
+            press: () {},
+          ),
+          DrawerListTile(
+            title: "Profile",
+            svgSrc: "assets/icons/menu_profile.svg",
+            press: () {},
+          ),
+          DrawerListTile(
+            title: "Settings",
+            svgSrc: "assets/icons/menu_setting.svg",
+            press: () {},
+          ),
         ],
       ),
     );
@@ -63,13 +63,13 @@ class SideMenu extends StatelessWidget {
 }
 
 class DrawerListTile extends StatelessWidget {
-  const DrawerListTile({
-    Key? key,
-    // For selecting those three line once press "Command+D"
-    required this.title,
-    required this.svgSrc,
-    required this.press,
-  }) : super(key: key);
+  DrawerListTile({ //removed const Drawer...
+  //   Key? key,
+  //   // For selecting those three line once press "Command+D"
+    this.title, //removed required from all three
+    this.svgSrc,
+    this.press,
+  }); //: super(key: key);
 
   final String title, svgSrc;
   final VoidCallback press;
