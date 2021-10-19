@@ -17,11 +17,10 @@ class communityProjectCard  extends StatelessWidget {
               Stack(
                 children: [
                   Ink.image(
-                    image: NetworkImage(
-                      'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1327&q=80',
-                    ),
+                    image: AssetImage('assets/c35b2be4b09afcc1d0fadf8ccf783cb4.png'),
                     height: 240,
                     fit: BoxFit.cover,
+
                   ),
                   Positioned(
                     bottom: 16,

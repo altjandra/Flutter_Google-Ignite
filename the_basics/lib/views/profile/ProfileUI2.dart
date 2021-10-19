@@ -1,5 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:the_basics/widgets/community_projects/communityProjects.dart';
+import 'package:the_basics/widgets/community_projects/communityProjects2.dart';
+import 'package:the_basics/widgets/community_projects/communityProjects3.dart';
 import 'package:the_basics/widgets/community_projects_display/community_projects_display.dart';
 
 class ProfileUI2 extends StatelessWidget {
@@ -43,7 +47,8 @@ class ProfileUI2 extends StatelessWidget {
                 alignment: Alignment(0.0,2.5),
                 child: CircleAvatar(
                   backgroundImage: NetworkImage(
-                      "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1327&q=80"
+                      // "https://images.app.goo.gl/RZkzhEZU68oXE3p59"
+                       "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1327&q=80"
                   ),
                   radius: 60.0,
                 ),
@@ -54,39 +59,67 @@ class ProfileUI2 extends StatelessWidget {
             SizedBox(
               height: 60,
             ),
-            Text(
-              "Rajat Palankar"
-              ,style: TextStyle(
-                fontSize: 25.0,
-                color:Colors.blueGrey,
-                letterSpacing: 2.0,
-                fontWeight: FontWeight.w400
+            Align(
+              alignment: Alignment.center,
+              child: Text(
+                "Kelly Baker",
+                style: GoogleFonts.montserrat(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 25,
+                    letterSpacing: 2.0,
+                    color: Colors.black
+                ),
+              ),
             ),
-            ),
+            // Text(
+            //   "Rajat Palankar"
+            //   ,style: TextStyle(
+            //     fontSize: 25.0,
+            //     color:Colors.blueGrey,
+            //     letterSpacing: 2.0,
+            //     fontWeight: FontWeight.w400
+            // ),
+
             SizedBox(
               height: 10,
             ),
-            Text(
-              "Belgaum, India"
-              ,style: TextStyle(
-                fontSize: 18.0,
-                color:Colors.black45,
-                letterSpacing: 2.0,
-                fontWeight: FontWeight.w300
+            Align(
+            alignment: Alignment.center,
+            child: Text(
+            "Singapore,Singapore",
+            style: GoogleFonts.montserrat(
+            fontWeight: FontWeight.bold,
+            fontSize: 25,
+            letterSpacing: 2.0,
+            color: Colors.black
             ),
             ),
+            ),
+
             SizedBox(
               height: 10,
             ),
-            Text(
-              "App Developer at XYZ Company"
-              ,style: TextStyle(
-                fontSize: 15.0,
-                color:Colors.black45,
-                letterSpacing: 2.0,
-                fontWeight: FontWeight.w300
+            Align(
+              alignment: Alignment.center,
+              child: Text(
+                 "Aspiring UI/UX designer",
+                  style: GoogleFonts.montserrat(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15,
+                      letterSpacing: 2.0,
+                      color: Colors.black
+                ),
+              ),
             ),
-            ),
+            // Text(
+            //   "App Developer at XYZ Company"
+            //   ,style: TextStyle(
+            //     fontSize: 15.0,
+            //     color:Colors.black45,
+            //     letterSpacing: 2.0,
+            //     fontWeight: FontWeight.w300
+            // ),
+            // ),
             SizedBox(
               height: 10,
             ),
@@ -123,8 +156,21 @@ class ProfileUI2 extends StatelessWidget {
                 fontWeight: FontWeight.w300
             ),
             ),
-            CommunityProjectsDisplay()
-            
+            SizedBox(
+              height:40,
+            ),
+            // CommunityProjectsDisplay()
+            Container(child:
+            Row(
+                children: [
+                  Expanded(child: communityProjectCard()),
+                  const SizedBox(width: 12),
+                  Expanded(child: communityProjectCard2()),
+                  const SizedBox(width: 12),
+                  Expanded(child: communityProjectCard3()),]
+
+            )
+            ),
             
           ]
             // Card(

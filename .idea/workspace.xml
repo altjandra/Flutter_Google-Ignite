@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c50625c-bace-4b5f-8c4a-61e986ba17b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/the_basics/lib/widgets/coach_card/coach_card.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/Mentoring.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/views/mentoring/Mentoring.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/routes/router_generator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/routes/router_generator.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/the_basics/lib/UserPreferences.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects/communityProjects2.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects/communityProjects3.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_basics/lib/login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/login.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_basics/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_basics/lib/register.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/register.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_basics/lib/user.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/user.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_basics/lib/views/profile/ProfileUI2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/views/profile/ProfileUI2.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects/communityProjects.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects/communityProjects.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects_display/community_projects_display.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects_display/community_projects_display.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/highlights_carousel/highlights_carousel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/highlights_carousel/highlights_carousel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_basics/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +25,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/charzzzzy/.android/avd/Pixel_C_API_31.avd]" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="KEEP" />
@@ -74,17 +90,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/the_basics/lib/main.dart</url>
-          <line>24</line>
+          <line>42</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/the_basics/lib/main.dart</url>
-          <line>16</line>
+          <line>17</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/the_basics/lib/main.dart</url>
-          <line>26</line>
+          <line>44</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
@@ -104,13 +120,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/the_basics/lib/login.dart</url>
-          <line>92</line>
+          <line>96</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/the_basics/lib/login.dart</url>
-          <line>121</line>
+          <line>125</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/the_basics/lib/widgets/community_projects/communityProjects2.dart</url>
+          <line>39</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

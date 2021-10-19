@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -20,21 +21,22 @@ class _HighlightsCarouselState extends State<HighlightsCarousel> {
   int _current = 0;
 
   final List<String> images = [
-    'asia.jpg',
-    'africa.jpg',
-    'europe.jpg',
-    'south_america.jpg',
-    'australia.jpg',
-    'antarctica.jpg',
+    'a00b9c20-b6b1-4fb9-9bb8-d69764322182_4x.png',
+    'websiteC.png',
+    'cdbefb104928081.5f6d97a055414.jpg',
+    'c35b2be4b09afcc1d0fadf8ccf783cb4.png',
+    'phone.jpeg',
+
+    'website_bugs.png',
   ];
 
   final List<String> places = [
-    'ASIA',
+    'E-PAYMENT',
     'AFRICA',
-    'EUROPE',
-    'AMERICA',
-    'AUSTRALIA',
-    'ANTARCTICA',
+    'BUDGET TRACKER',
+    'SOCIAL SITE',
+    'COIN',
+    'BUG ENTHUSIASTS',
   ];
 
   List<Widget> generateImagesTiles() {
@@ -78,14 +80,24 @@ class _HighlightsCarouselState extends State<HighlightsCarousel> {
             )),
             AspectRatio(aspectRatio: 18/8,
             child:Center(
-              child:Text(
-                places[_current],
-                style: TextStyle(
-                  decoration: TextDecoration.none,
-                  color: Colors.white,
-                  fontSize: MediaQuery.of(context).size.width/15
+                child: Text(
+                  places[_current],
+                  style: GoogleFonts.montserrat(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 50,
+                      letterSpacing: 2.0,
+                      color: Colors.black
+                  ),
                 ),
-              )
+              // child:Text(
+              //   places[_current],
+              //
+              //   style: TextStyle(
+              //     decoration: TextDecoration.none,
+              //     color: Colors.white,
+              //     fontSize: MediaQuery.of(context).size.width/15
+              //   ),
+              // )
             )
             )
           ]

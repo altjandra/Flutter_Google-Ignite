@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';  
 import 'package:the_basics/widgets/community_projects/communityProjects.dart';
+import 'package:the_basics/widgets/community_projects/communityProjects2.dart';
+import 'package:the_basics/widgets/community_projects/communityProjects3.dart';
 
 class CommunityProjectsDisplay extends StatefulWidget {
   @override
@@ -55,14 +57,14 @@ class _CommunityProjectsDisplayState extends State<CommunityProjectsDisplay> {
                   children: [
                     Expanded(child: communityProjectCard()),
                     const SizedBox(width: 12),
-                    Expanded(child: communityProjectCard()),
+                    Expanded(child: communityProjectCard2()),
                     const SizedBox(width: 12),
-                    Expanded(child: communityProjectCard()),]
+                    Expanded(child: communityProjectCard3()),]
                 ): Row(
                   children: [
-                    Expanded(child: communityProjectCard()),
+                    Expanded(child: communityProjectCard2()),
                     const SizedBox(width: 12),
-                    Expanded(child: communityProjectCard()),
+                    Expanded(child: communityProjectCard3()),
                     const SizedBox(width: 12),
                     ]
                 ),
