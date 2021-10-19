@@ -28,32 +28,42 @@ class _CommunityProjectsDisplayState extends State<CommunityProjectsDisplay> {
       Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [SizedBox(
-        width: 180,
-        height: 30,
+        width: 200,
+        height: 40,
         child: RaisedButton(
+          color:Colors.blue,
             child:
-              Text("Projects"),
-            textColor: Colors.black,
+              Text("Projects",
+                style: TextStyle(
+                  fontSize: 20.0, // insert your font size here
+                ),
+              ),
+            textColor: Colors.white,
             shape: new RoundedRectangleBorder(
             borderRadius: new BorderRadius.circular(15.0),
-            side: BorderSide(color: Colors.blueGrey)),
+            side: BorderSide(color: Colors.blue)),
             onPressed: () {
                 setState(() {
                   onClick1 = true;
                 });
               }),
       ),
-          const SizedBox(width: 10),
+          const SizedBox(width: 100),
           SizedBox(
-            width: 180,
-            height: 30,
+            width: 200,
+            height: 40,
             child: RaisedButton(
+              color: Colors.blue,
             child:
-              Text("Collaboration"),
-            textColor: Colors.black,
+              Text("Collaboration",
+                style: TextStyle(
+                fontSize: 20.0, // insert your font size here
+              ),
+              ),
+            textColor: Colors.white,
             shape: new RoundedRectangleBorder(
             borderRadius: new BorderRadius.circular(15.0),
-            side: BorderSide(color: Colors.blueGrey)),
+             side: BorderSide(color: Colors.blue)),
             onPressed: () {
                 setState(() {
                   onClick1 = false;
@@ -63,6 +73,10 @@ class _CommunityProjectsDisplayState extends State<CommunityProjectsDisplay> {
           )
           ]
         ),
+      SizedBox(
+        height: 60,
+      ),
+
     Container(child:
           onClick1 ? Row(
                   children: [

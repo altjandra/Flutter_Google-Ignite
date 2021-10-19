@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c50625c-bace-4b5f-8c4a-61e986ba17b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/the_basics/assets/background.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/the_basics/lib/widgets/profile_projects/profile_projects.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/the_basics/lib/widgets/profile_projects/profile_projects_display.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/views/home/home_content_desktop.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/views/home/home_content_desktop.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/views/home/home_content_mobile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/views/home/home_content_mobile.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/views/home/home_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/views/home/home_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/the_basics/lib/views/profile/ProfileUI2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/views/profile/ProfileUI2.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects_display/community_projects_display.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects_display/community_projects_display.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/profile_projects/profile_projects_display.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/profile_projects/profile_projects_display.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,19 +69,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="text">
-                    <value>
-                      <list>
-                        <option value="profile" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>

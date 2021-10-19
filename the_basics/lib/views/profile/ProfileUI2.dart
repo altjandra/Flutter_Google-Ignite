@@ -182,17 +182,7 @@ class ProfileUI2 extends StatelessWidget {
               height:40,
             ),
             // CommunityProjectsDisplay()
-            Container(child:
-            Row(
-                children: [
-                  Expanded(child: communityProjectCard()),
-                  const SizedBox(width: 12),
-                  Expanded(child: communityProjectCard2()),
-                  const SizedBox(width: 12),
-                  Expanded(child: communityProjectCard3()),]
 
-            )
-            ),
 
             ProfileProjectsDisplay()
             

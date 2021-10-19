@@ -1,4 +1,7 @@
-import 'package:flutter/material.dart';  
+import 'package:flutter/material.dart';
+import 'package:the_basics/widgets/community_projects/communityProjects.dart';
+import 'package:the_basics/widgets/community_projects/communityProjects2.dart';
+import 'package:the_basics/widgets/community_projects/communityProjects3.dart';
 import 'package:the_basics/widgets/profile_projects/profile_projects.dart';
 
 class ProfileProjectsDisplay extends StatefulWidget {
@@ -21,29 +24,31 @@ class _ProfileProjectsDisplayState extends State<ProfileProjectsDisplay> {
         width: 180,
         height: 30,
         child: RaisedButton(
+          color: Colors.blue,
             child:
               Text("My Current Projects"),
-            textColor: Colors.black,
+            textColor: Colors.white,
             shape: new RoundedRectangleBorder(
             borderRadius: new BorderRadius.circular(15.0),
-            side: BorderSide(color: Colors.blueGrey)),
+            side: BorderSide(color: Colors.blue)),
             onPressed: () {
                 setState(() {
                   onClick1 = true;
                 });
               }),
       ),
-          const SizedBox(width: 10),
+          const SizedBox(width: 80),
           SizedBox(
             width: 180,
             height: 30,
             child: RaisedButton(
+              color: Colors.blue,
             child:
               Text("Collaboration"),
-            textColor: Colors.black,
+            textColor: Colors.white,
             shape: new RoundedRectangleBorder(
             borderRadius: new BorderRadius.circular(15.0),
-            side: BorderSide(color: Colors.blueGrey)),
+            side: BorderSide(color: Colors.blue)),
             onPressed: () {
                 setState(() {
                   onClick1 = false;
@@ -53,21 +58,24 @@ class _ProfileProjectsDisplayState extends State<ProfileProjectsDisplay> {
           )
           ]
         ),
+      SizedBox(
+        height: 60,
+      ),
     Container(child:
           onClick1 ? Row(
                   children: [
                     const SizedBox(width: 12),
-                    Expanded(child: profileProjectCard()),
+                    Expanded(child: communityProjectCard2()),
                     const SizedBox(width: 12),
-                    Expanded(child: profileProjectCard()),
+                    Expanded(child:  communityProjectCard()),
                     const SizedBox(width: 12),
-                    Expanded(child: profileProjectCard()),]
+                    Expanded(child:  communityProjectCard3()),]
                 ): Row(
                   children: [
                     const SizedBox(width: 12),
-                    Expanded(child: profileProjectCard()),
+                    Expanded(child:  communityProjectCard2()),
                     const SizedBox(width: 12),
-                    Expanded(child: profileProjectCard()),
+                    Expanded(child:  communityProjectCard()),
                     const SizedBox(width: 12),
                     ]
                 ),
