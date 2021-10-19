@@ -112,7 +112,7 @@ class _LoginState extends State<Login> {
                             ),
                           ),
                         ),
-                      Padding(padding: EdgeInsets.symmetric(horizontal:400),child:
+                      Padding(padding: EdgeInsets.symmetric(horizontal:600),child:
                         TextFormField(
                           decoration: new InputDecoration(
                             labelText: "Enter Email",
@@ -163,9 +163,10 @@ class _LoginState extends State<Login> {
                             ),
                           ),
                         ),
-                      Padding(padding: EdgeInsets.symmetric(horizontal:400),child:
+                      Padding(padding: EdgeInsets.symmetric(horizontal:600),child:
 
                         TextFormField(
+                            obscureText:true,
                             decoration: new InputDecoration(
                               labelText: "Enter Password",
                               fillColor: Colors.white,

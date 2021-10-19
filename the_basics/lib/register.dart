@@ -83,7 +83,7 @@ class _RegisterState extends State<Register> {
                     ),
                   ),
                 ),
-                Padding(padding: EdgeInsets.symmetric(horizontal:400),child:
+                Padding(padding: EdgeInsets.symmetric(horizontal:600),child:
                 TextFormField(
                   decoration: new InputDecoration(
                     labelText: "Enter Email",
@@ -134,7 +134,7 @@ class _RegisterState extends State<Register> {
                     ),
                   ),
                 ),
-                Padding(padding: EdgeInsets.symmetric(horizontal:400),child:
+                Padding(padding: EdgeInsets.symmetric(horizontal:600),child:
 
                 TextFormField(
                   decoration: new InputDecoration(
