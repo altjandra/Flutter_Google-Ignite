@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/services.dart';
 import 'package:the_basics/views/home/home_view.dart';
 
 import 'dashboard.dart';
@@ -21,28 +22,35 @@ class _LoginState extends State<Login> {
   User user = User("", "");
   String url = "http://localhost:8001/login";
 
+  Future hideBar() async=>
+      SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.top]);
+
   Future save() async {
     var res = await http.post(url,
         headers: {'Content-Type': 'application/json'},
         body: json.encode({'email': user.email, 'password': user.password}));
-    // print(res.body);
-    Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => HomeView(),
-        ));
-    // if (res.statusCode == 200) {
+    // print(res.body)
+    // ;
+    // if(res.body!=null){
     //   Navigator.push(
     //       context,
     //       MaterialPageRoute(
     //         builder: (context) => HomeView(),
     //       ));
-    //   // If the server did return a 200 OK response,
-    //   // then parse the JSON.
-    //   // return Album.fromJson(jsonDecode(response.body));
-    // }else{
-    //   throw Exception('Incorrect username or password');
     // }
+
+    if (res.statusCode == 200) {
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => HomeView(),
+          ));
+      // If the server did return a 200 OK response,
+      // then parse the JSON.
+      // return Album.fromJson(jsonDecode(response.body));
+    }else{
+      throw Exception('Incorrect username or password');
+    }
   }
 
   @override
@@ -55,21 +63,28 @@ class _LoginState extends State<Login> {
             child: Column(
               children: [
                 Container(
-                  height: 750,
+                  // height: 750,
                   alignment :Alignment.center,
+                  height: MediaQuery.of(context).size.height,
 
-                  // decoration: BoxDecoration(
-                  //   color: Color.fromRGBO(233, 65, 82, 1),
-                  //   boxShadow: [
-                  //     BoxShadow(
-                  //         blurRadius: 10,
-                  //         color: Colors.black,
-                  //         offset: Offset(1, 5))
-                  //   ],
-                  //   borderRadius: BorderRadius.only(
-                  //       bottomLeft: Radius.circular(80),
-                  //       bottomRight: Radius.circular(20)),
-                  // ),
+                  decoration: BoxDecoration(
+
+                          image: DecorationImage(
+                          image: AssetImage(
+                                  "assets/pexels-fauxels-3184639.jpg"
+                              ),
+                          fit: BoxFit.cover
+                      ),
+                    // boxShadow: [
+                    //   BoxShadow(
+                    //       blurRadius: 10,
+                    //       color: Colors.black,
+                    //       offset: Offset(1, 5))
+                    // ],
+                    // borderRadius: BorderRadius.only(
+                    //     bottomLeft: Radius.circular(80),
+                    //     bottomRight: Radius.circular(20)),
+                  ),
                   child: Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Column(
@@ -77,11 +92,11 @@ class _LoginState extends State<Login> {
                         SizedBox(
                           height: 100,
                         ),
-                        Text("Login",
+                        Text("C o L a b",
                             style: GoogleFonts.montserrat(
                               fontWeight: FontWeight.bold,
-                              fontSize: 60,
-                              color: Colors.black,
+                              fontSize: 100,
+                              color: Colors.white,
                             )),
                         SizedBox(
                           height: 30,
@@ -93,12 +108,25 @@ class _LoginState extends State<Login> {
                             style: GoogleFonts.roboto(
                               // fontWeight: FontWeight.bold,
                               fontSize: 30,
-                              color: Colors.black
+                              color: Colors.white
                             ),
                           ),
                         ),
-                      Padding(padding: EdgeInsets.symmetric(horizontal:150),child:
+                      Padding(padding: EdgeInsets.symmetric(horizontal:600),child:
                         TextFormField(
+                          decoration: new InputDecoration(
+                            labelText: "Enter Email",
+                            fillColor: Colors.white,
+                            filled:true,
+                            border: new OutlineInputBorder(
+
+                              borderRadius: new BorderRadius.circular(25.0),
+                              borderSide: new BorderSide(
+                                color:Colors.white
+                              ),
+
+                            ),
+                          ),
                           // alignment:Alignment.center,
                           controller: TextEditingController(text: user.email),
                           onChanged: (val) {
@@ -111,16 +139,16 @@ class _LoginState extends State<Login> {
                             return null;
                           },
                           style: TextStyle(fontSize: 30, color: Colors.black),
-                          decoration: InputDecoration(
-                              errorStyle: TextStyle(fontSize: 20, color: Colors.black)
-                              // border: OutlineInputBorder(
-                              //     borderSide: BorderSide.none)
-                            ),
+                          // decoration: InputDecoration(
+                          //     errorStyle: TextStyle(fontSize: 20, color: Colors.white)
+                          //     // border: OutlineInputBorder(
+                          //     //     borderSide: BorderSide.none)
+                          //   ),
                         )),
-                        Container(
-                          height: 8,
-                          color: Color.fromRGBO(255, 255, 255, 0.4),
-                        ),
+                        // Container(
+                        //   height: 8,
+                        //   color: Color.fromRGBO(255, 255, 255, 0.4),
+                        // ),
                         const SizedBox(
                           height: 60,
                         ),
@@ -131,14 +159,26 @@ class _LoginState extends State<Login> {
                             style: GoogleFonts.roboto(
                               // fontWeight: FontWeight.bold,
                               fontSize: 30,
-                              color: Colors.black,
+                              color: Colors.white,
                             ),
                           ),
                         ),
-                      Padding(padding: EdgeInsets.symmetric(horizontal:150),child:
+                      Padding(padding: EdgeInsets.symmetric(horizontal:600),child:
 
                         TextFormField(
-                          obscureText: true,
+                            obscureText:true,
+                            decoration: new InputDecoration(
+                              labelText: "Enter Password",
+                              fillColor: Colors.white,
+                              filled:true,
+                              border: new OutlineInputBorder(
+                                borderRadius: new BorderRadius.circular(25.0),
+                                borderSide: new BorderSide(
+                                    color:Colors.white
+                                ),
+                              ),
+                            ),
+
                           controller:
                           TextEditingController(text: user.password),
                           onChanged: (val) {
@@ -151,17 +191,17 @@ class _LoginState extends State<Login> {
                             return null;
                           },
                           style: TextStyle(fontSize: 30, color: Colors.black),
-                          decoration: const InputDecoration(
-                              errorStyle:
-                              TextStyle(fontSize: 20, color: Colors.black),
-                              // border: OutlineInputBorder(
-                              //     borderSide: BorderSide.none)
-                                ),
+                          // decoration: const InputDecoration(
+                          //     errorStyle:
+                          //     TextStyle(fontSize: 20, color: Colors.white),
+                          //     // border: OutlineInputBorder(
+                          //     //     borderSide: BorderSide.none)
+                          //       ),
                         )),
-                        Container(
-                          height: 8,
-                          color: Color.fromRGBO(255, 255, 255, 0.4),
-                        ),
+                        // Container(
+                        //   height: 8,
+                        //   color: Color.fromRGBO(255, 255, 255, 0.4),
+                        // ),
                         const SizedBox(
                           height: 60,
                         ),
@@ -178,34 +218,38 @@ class _LoginState extends State<Login> {
                               "Dont have Account ?",
                               style: GoogleFonts.roboto(
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 20,
-                                  color: Colors.black),
+                                  fontSize: 40,
+                                  color: Colors.white),
                             ),
                           ),
+                        ),
+                        SizedBox(
+                          height: 60,
+                        ),
+                        Container(
+                          height: 90,
+                          width: 90,
+                          child: FlatButton(
+                              color: Colors.white,
+                              onPressed: () {
+                                if (_formKey.currentState.validate()) {
+                                  save();
+                                }
+                              },
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(50)),
+                              child: const Icon(
+                                Icons.arrow_forward,
+                                color: Colors.black,
+                                size: 30,
+                              )),
                         )
                       ],
                     ),
                   ),
                 ),
 
-                Container(
-                  height: 90,
-                  width: 90,
-                  child: FlatButton(
-                      color: Color.fromRGBO(233, 65, 82, 1),
-                      onPressed: () {
-                        if (_formKey.currentState.validate()) {
-                          save();
-                        }
-                      },
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(50)),
-                      child: const Icon(
-                        Icons.arrow_forward,
-                        color: Colors.white,
-                        size: 30,
-                      )),
-                )
+
               ],
             )),
       ),

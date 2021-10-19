@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';  
 import 'package:the_basics/widgets/community_projects/communityProjects.dart';
+import 'package:the_basics/widgets/community_projects/communityProjects2.dart';
+import 'package:the_basics/widgets/community_projects/communityProjects3.dart';
 
 class CommunityProjectsDisplay extends StatefulWidget {
   @override
@@ -23,48 +25,83 @@ class _CommunityProjectsDisplayState extends State<CommunityProjectsDisplay> {
                     fontSize: 60),
                 )
       ),
-      Row(children: [RaisedButton(
-          child:
-            Text("Existing Projects"),
-          textColor: Colors.black,
-          shape: new RoundedRectangleBorder(
-          borderRadius: new BorderRadius.circular(18.0),
-          side: BorderSide(color: Colors.blueGrey)),
-          onPressed: () {
-              setState(() {
-                onClick1 = true;
-              });
-            }),
-          RaisedButton(
-          child:
-            Text("Collaboration"),
-          textColor: Colors.black,
-          shape: new RoundedRectangleBorder(
-          borderRadius: new BorderRadius.circular(18.0),
-          side: BorderSide(color: Colors.blueGrey)),
-          onPressed: () {
-              setState(() {
-                onClick1 = false;
-                onClick2 = true;  
-              });
-            })
+      Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [SizedBox(
+        width: 200,
+        height: 40,
+        child: RaisedButton(
+          color:Colors.blue,
+            child:
+              Text("Projects",
+                style: TextStyle(
+                  fontSize: 20.0, // insert your font size here
+                ),
+              ),
+            textColor: Colors.white,
+            shape: new RoundedRectangleBorder(
+            borderRadius: new BorderRadius.circular(15.0),
+            side: BorderSide(color: Colors.blue)),
+            onPressed: () {
+                setState(() {
+                  onClick1 = true;
+                });
+              }),
+      ),
+          const SizedBox(width: 100),
+          SizedBox(
+            width: 200,
+            height: 40,
+            child: RaisedButton(
+              color: Colors.blue,
+            child:
+              Text("Collaboration",
+                style: TextStyle(
+                fontSize: 20.0, // insert your font size here
+              ),
+              ),
+            textColor: Colors.white,
+            shape: new RoundedRectangleBorder(
+            borderRadius: new BorderRadius.circular(15.0),
+             side: BorderSide(color: Colors.blue)),
+            onPressed: () {
+                setState(() {
+                  onClick1 = false;
+                  onClick2 = true;  
+                });
+              }),
+          )
           ]
         ),
+      SizedBox(
+        height: 60,
+      ),
+
     Container(child:
           onClick1 ? Row(
                   children: [
-                    Expanded(child: communityProjectCard()),
                     const SizedBox(width: 12),
                     Expanded(child: communityProjectCard()),
                     const SizedBox(width: 12),
-                    Expanded(child: communityProjectCard()),]
+                    Expanded(child: communityProjectCard2()),
+                    const SizedBox(width: 12),
+
+                    Expanded(child: communityProjectCard3()),]
                 ): Row(
                   children: [
+                    Expanded(child: communityProjectCard2()),
+
                     Expanded(child: communityProjectCard()),
-                    const SizedBox(width: 12),
-                    Expanded(child: communityProjectCard()),
-                    const SizedBox(width: 12),
-                    ]
+                    const SizedBox(width: 12)]
+                // ): Row(
+                //   children: [
+                //     const SizedBox(width: 12),
+                //     Expanded(child: communityProjectCard()),
+                //
+                //     const SizedBox(width: 12),
+                //     Expanded(child: communityProjectCard3()),
+                //     const SizedBox(width: 12),
+                //     ]
                 ),
               )
         ],

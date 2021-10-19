@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c50625c-bace-4b5f-8c4a-61e986ba17b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/the_basics/lib/Mentoring.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/the_basics/lib/login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/login.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/the_basics/lib/register.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/register.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/routes/router_generator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/routes/router_generator.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/routes/routes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/routes/routes.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/views/home/home_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/views/home/home_view.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/views/profile/ProfileUI2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/views/profile/ProfileUI2.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/navigation_bar/navigation_bar_tablet_desktop.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/navigation_bar/navigation_bar_tablet_desktop.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/new_navigation/nav_bar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/new_navigation/nav_bar.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/test/widget_test.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +15,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/charzzzzy/.android/avd/Pixel_C_API_31.avd]" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="KEEP" />
@@ -39,7 +37,7 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="dart.settings" />
+    <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -49,7 +47,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="appp" type="FlutterRunConfigurationType" factoryName="Flutter">
+    <configuration name="app" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="filePath" value="$PROJECT_DIR$/the_basics/lib/main.dart" />
       <method v="2" />
     </configuration>
@@ -82,23 +80,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/the_basics/lib/main.dart</url>
-          <line>28</line>
+          <line>42</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/the_basics/lib/main.dart</url>
-          <line>19</line>
+          <line>17</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/the_basics/lib/main.dart</url>
-          <line>32</line>
+          <line>44</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/the_basics/lib/main.dart</url>
-          <line>30</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/the_basics/lib/views/home/home_view.dart</url>
@@ -107,7 +100,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/the_basics/lib/views/home/home_view.dart</url>
-          <line>50</line>
+          <line>57</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
@@ -116,9 +109,19 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/the_basics/lib/views/home/home_view.dart</url>
-          <line>46</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/the_basics/lib/login.dart</url>
+          <line>96</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/the_basics/lib/login.dart</url>
+          <line>125</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/the_basics/lib/widgets/community_projects/communityProjects2.dart</url>
+          <line>39</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

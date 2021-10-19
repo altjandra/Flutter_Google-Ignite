@@ -11,11 +11,14 @@ class HomeContentMobile extends StatelessWidget {
       mainAxisSize: MainAxisSize.max,
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        CourseDetails(),
+        Padding(
+          padding: const EdgeInsets.all(30.0),
+          child: CourseDetails(),
+        ),
         SizedBox(
           height: 100,
         ),
-        CallToAction('Join Course'),
+        // CallToAction('Join Course'),
       ],
     );
   }
