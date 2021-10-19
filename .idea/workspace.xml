@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c50625c-bace-4b5f-8c4a-61e986ba17b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/the_basics/lib/UserPreferences.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects/communityProjects2.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects/communityProjects3.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/login.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/register.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/register.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/user.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/user.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/views/profile/ProfileUI2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/views/profile/ProfileUI2.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects/communityProjects.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects/communityProjects.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects_display/community_projects_display.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects_display/community_projects_display.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/highlights_carousel/highlights_carousel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/highlights_carousel/highlights_carousel.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
