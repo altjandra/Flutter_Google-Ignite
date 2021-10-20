@@ -120,8 +120,9 @@ class communityProjectCard  extends StatelessWidget {
               // )
             ],
           ),
-        
       ),
     );
   }
 }
+
+
