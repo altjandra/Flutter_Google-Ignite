@@ -18,9 +18,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue, 
         textTheme: Theme.of(context).textTheme.apply(fontFamily: 'Open Sans'),visualDensity: VisualDensity.adaptivePlatformDensity, //added
       ),
-      builder: (_, child) => AppView(
-        child: child,
-      ),
+      // builder: (_, child) => AppView(
+      //   child: child,
+      // ),
       //
       // home: FutureBuilder(
       //     future: getUserData(),

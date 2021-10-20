@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:the_basics/widgets/coach_card/coach_card.dart';
+import 'package:the_basics/widgets/new_navigation/nav_bar.dart';
 // import 'package:the_basics/widgets/coach_card/style_card.dart';
 
 
@@ -32,6 +33,7 @@ class Mentoring extends StatelessWidget {
         child: SingleChildScrollView(child:
         Column(
               children:[
+                NavigationBar(),
                 SizedBox(
                   height: 30,
                 ),

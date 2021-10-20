@@ -27,11 +27,14 @@ class HomeView extends StatelessWidget {
 
           child: SingleChildScrollView(
 
-            child: Column(
+            child:
+
+            Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.stretch,
 
               children: <Widget>[
+                NavigationBar(),
               Container(
                   decoration: BoxDecoration(
                   image: DecorationImage(

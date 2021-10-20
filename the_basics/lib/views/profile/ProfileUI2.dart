@@ -6,6 +6,7 @@ import 'package:the_basics/widgets/community_projects/communityProjects2.dart';
 import 'package:the_basics/widgets/community_projects/communityProjects2.dart';
 import 'package:the_basics/widgets/community_projects/communityProjects3.dart';
 import 'package:the_basics/widgets/community_projects_display/community_projects_display.dart';
+import 'package:the_basics/widgets/new_navigation/nav_bar.dart';
 import 'package:the_basics/widgets/profile_projects/profile_projects_display.dart';
 
 
@@ -34,6 +35,7 @@ class ProfileUI2 extends StatelessWidget {
         child: SingleChildScrollView(child:
         Column(
           children: [
+            NavigationBar(),
             Container(
               decoration: BoxDecoration(
                 image: DecorationImage(

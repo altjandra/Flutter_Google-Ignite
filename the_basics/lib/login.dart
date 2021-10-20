@@ -31,26 +31,26 @@ class _LoginState extends State<Login> {
         body: json.encode({'email': user.email, 'password': user.password}));
     // print(res.body)
     // ;
-    // if(res.body!=null){
-    //   Navigator.push(
-    //       context,
-    //       MaterialPageRoute(
-    //         builder: (context) => HomeView(),
-    //       ));
-    // }
-
-    if (res.statusCode == 200) {
+    if(res.body!=null){
       Navigator.push(
           context,
           MaterialPageRoute(
             builder: (context) => HomeView(),
           ));
-      // If the server did return a 200 OK response,
-      // then parse the JSON.
-      // return Album.fromJson(jsonDecode(response.body));
-    }else{
-      throw Exception('Incorrect username or password');
     }
+
+    // if (res.statusCode == 200) {
+    //   Navigator.push(
+    //       context,
+    //       MaterialPageRoute(
+    //         builder: (context) => HomeView(),
+    //       ));
+    //   // If the server did return a 200 OK response,
+    //   // then parse the JSON.
+    //   // return Album.fromJson(jsonDecode(response.body));
+    // }else{
+    //   throw Exception('Incorrect username or password');
+    // }
   }
 
   @override
