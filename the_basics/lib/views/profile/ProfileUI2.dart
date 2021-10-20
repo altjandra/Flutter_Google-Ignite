@@ -105,6 +105,7 @@ class ProfileUI2 extends StatelessWidget {
                       color: Colors.black)
                 ),
               ),
+            const SizedBox(height: 10),
             Text(
               "My dream is to build a mobile app that can change the world"
               ,style: TextStyle(
@@ -115,7 +116,7 @@ class ProfileUI2 extends StatelessWidget {
 
             ),
             SizedBox(
-              height: 10,
+              height: 20,
             ),
             RaisedButton(
               onPressed: () {

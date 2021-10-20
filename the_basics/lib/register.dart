@@ -24,11 +24,10 @@ class _RegisterState extends State<Register> {
         headers: {'Content-Type': 'application/json'},
         // body: json.encode({'username':user.username,'email': user.email, 'password': user.password}));
         body: json.encode({'email': user.email, 'password': user.password}));
-    // print("SENT");
-    // print(res.body);
-    if (res.body != null) {
+    if(res.statusCode==200){
       Navigator.pop(context);
     }
+
   }
 
   @override
@@ -73,54 +72,7 @@ class _RegisterState extends State<Register> {
                 SizedBox(
                   height: 30,
                 ),
-                // Align(
-                //   alignment: Alignment.center,
-                //   child: Text(
-                //     "Username",
-                //     style: GoogleFonts.roboto(
-                //       // fontWeight: FontWeight.bold,
-                //         fontSize: 30,
-                //         color: Colors.white
-                //     ),
-                //   ),
-                // ),
-                // Padding(padding: EdgeInsets.symmetric(horizontal:600),child:
-                // TextFormField(
-                //   decoration: new InputDecoration(
-                //     labelText: "Enter Username",
-                //     fillColor: Colors.white,
-                //     filled:true,
-                //     border: new OutlineInputBorder(
-                //
-                //       borderRadius: new BorderRadius.circular(25.0),
-                //       borderSide: new BorderSide(
-                //           color:Colors.white
-                //       ),
-                //
-                //     ),
-                //   ),
-                //   // alignment:Alignment.center,
-                //   controller: TextEditingController(text: user.email),
-                //   onChanged: (val) {
-                //     user.username = val;
-                //   },
-                //   validator: (value) {
-                //     if (value.isEmpty) {
-                //       return 'Username is Empty';
-                //     }
-                //     return null;
-                //   },
-                //   style: TextStyle(fontSize: 30, color: Colors.grey),
-                //   // decoration: InputDecoration(
-                //   //     errorStyle: TextStyle(fontSize: 20, color: Colors.white)
-                //   //     // border: OutlineInputBorder(
-                //   //     //     borderSide: BorderSide.none)
-                //   //   ),
-                // )),
-                // Container(
-                //   height: 8,
-                //   color: Color.fromRGBO(255, 255, 255, 0.4),
-                // ),
+
                 const SizedBox(
                   height: 60,
                 ),
@@ -161,7 +113,7 @@ class _RegisterState extends State<Register> {
                     }
                     return null;
                   },
-                  style: TextStyle(fontSize: 30, color: Colors.grey),
+                  style: TextStyle(fontSize: 30, color: Colors.black),
 
                 )),
                   const SizedBox(
@@ -207,7 +159,7 @@ class _RegisterState extends State<Register> {
                       }
                       return null;
                     },
-                    style: TextStyle(fontSize: 30, color: Colors.grey),
+                    style: TextStyle(fontSize: 30, color: Colors.black),
 
                   )),
                   const SizedBox(

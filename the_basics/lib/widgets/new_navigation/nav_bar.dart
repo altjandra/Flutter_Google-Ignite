@@ -132,13 +132,13 @@ class _NavigationBarState extends State<NavigationBar> {
           ),
              ),
 
-          SizedBox(width:760),
-          NavigationItem(
-            selected: index == 0,
-            title: 'Explore',
-            routeName: routeHome,
-            onHighlight: onHighlight,
-          ),
+          SizedBox(width:780),
+          // NavigationItem(
+          //   selected: index == 0,
+          //   title: 'Explore',
+          //   routeName: routeHome,
+          //   onHighlight: onHighlight,
+          // ),
           NavigationItem(
             selected: index == 0,
             title: 'Career Guidance',

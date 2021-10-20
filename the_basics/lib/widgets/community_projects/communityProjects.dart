@@ -112,7 +112,9 @@ class _communityProjectCardState  extends State<communityProjectCard> {
               ],
             ),
         ),
-        onTap: (){
+
+
+          onTap: (){
               showGeneralDialog(
                   barrierLabel: 'label',
                   barrierDismissible: true,

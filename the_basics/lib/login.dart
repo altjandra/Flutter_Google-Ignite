@@ -29,25 +29,28 @@ class _LoginState extends State<Login> {
     var res = await http.post(url,
         headers: {'Content-Type': 'application/json'},
         body: json.encode({'email': user.email, 'password': user.password}));
-    // print(res.body)
-    // ;
-    if(res.body!=null){
-      Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => HomeView(),
-          ));
-    }
 
+      validator: (value) {
+      if (res.statusCode == 200) {
+        return 'Email is Empty';
+      } else {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => HomeView(),
+            ));
+        return "Incorrect Username And Password";
+        }
+      };
+
+    //   return "Incorrect Username And Password";
+    // },
     // if (res.statusCode == 200) {
     //   Navigator.push(
     //       context,
     //       MaterialPageRoute(
     //         builder: (context) => HomeView(),
     //       ));
-    //   // If the server did return a 200 OK response,
-    //   // then parse the JSON.
-    //   // return Album.fromJson(jsonDecode(response.body));
     // }else{
     //   throw Exception('Incorrect username or password');
     // }
@@ -179,8 +182,7 @@ class _LoginState extends State<Login> {
                               ),
                             ),
 
-                          controller:
-                          TextEditingController(text: user.password),
+                          controller: TextEditingController(text: user.password),
                           onChanged: (val) {
                             user.password = val;
                           },
