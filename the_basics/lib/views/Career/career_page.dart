@@ -5,6 +5,7 @@ import 'package:the_basics/widgets/career_guidance/featured_tiles.dart';
 import 'package:the_basics/widgets/career_guidance/featured_heading.dart';
 import 'package:flutter/material.dart';
 import 'package:the_basics/responsive.dart';
+import 'package:the_basics/widgets/new_navigation/nav_bar.dart';
 
 class CareerGuidance extends StatefulWidget {
   @override
@@ -62,6 +63,7 @@ class _CareerGuidanceState extends State<CareerGuidance> {
         physics: ClampingScrollPhysics(),
         child: Column(
           children: [
+            NavigationBar(),
             Stack(
               children: [
                 Container(
