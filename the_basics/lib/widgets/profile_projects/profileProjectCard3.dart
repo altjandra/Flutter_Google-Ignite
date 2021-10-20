@@ -16,7 +16,7 @@ class profileProjectCard3  extends StatelessWidget {
               Stack(
                 children: [
                   Ink.image(
-                    image: AssetImage('assets/phone.jpeg'),
+                    image: AssetImage('assets/product-header-dashboard.png'),
                     height: 240,
                     fit: BoxFit.cover,
                   ),
@@ -25,7 +25,7 @@ class profileProjectCard3  extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
                 child: Align(alignment: Alignment.centerLeft, child: Text(
-                "Dashboard"
+                "Dashboard 3.0"
                 ,style: TextStyle(
                   fontSize: 25.0,
                   fontWeight: FontWeight.normal
@@ -49,8 +49,8 @@ class profileProjectCard3  extends StatelessWidget {
                   ), 
                   Row(
                   children: [
-                  Icon(Icons.bookmark_border_outlined),
-                  const SizedBox(width: 12),
+                  // Icon(Icons.bookmark_border_outlined),
+                  // const SizedBox(width: 12),
                   Icon(Icons.message_outlined),
                   const SizedBox(width: 12),
                   Icon(Icons.double_arrow_rounded),

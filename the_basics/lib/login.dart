@@ -30,6 +30,7 @@ class _LoginState extends State<Login> {
     //     headers: {'Content-Type': 'application/json'},
     //     body: json.encode({'email': user.email, 'password': user.password}));
 
+<<<<<<< HEAD
       // validator: (value) {
       // if (res.body != null) {
       //   return 'Email is Empty';
@@ -42,9 +43,16 @@ class _LoginState extends State<Login> {
         // return "Incorrect Username And Password";
         // };
       // };
+=======
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => HomeView(),
+        ));
+>>>>>>> b18863c4cc095c2a75611c8b0e238265244f2ce6
 
-    //   return "Incorrect Username And Password";
-    // },
+
+    // TAKE NOTE: if security is needed include this line
     // if (res.statusCode == 200) {
     //   Navigator.push(
     //       context,
@@ -52,9 +60,11 @@ class _LoginState extends State<Login> {
     //         builder: (context) => HomeView(),
     //       ));
     // }else{
-    //   throw Exception('Incorrect username or password');
+    // return "Incorrect Username And Password";
     // }
+
   }
+
 
   @override
   Widget build(BuildContext context) {

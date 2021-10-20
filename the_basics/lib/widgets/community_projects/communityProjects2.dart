@@ -93,7 +93,7 @@ import 'package:flutter/material.dart';
   crossAxisAlignment: CrossAxisAlignment.start,
   children: <Widget> [
   Container(
-  child: Text("Samuel Goh", style: TextStyle(
+  child: Text("Rachel Green", style: TextStyle(
   color: Colors.black,
   decoration: TextDecoration.underline))),
   Container(
@@ -190,7 +190,7 @@ import 'package:flutter/material.dart';
   borderRadius: BorderRadius.all(Radius.circular(20.0))),
   onPressed: (){},
   child: Text(
-  "Illustrator",
+  "Software Engineer",
   style: TextStyle(color: Colors.white),
   ),
   ),
@@ -292,7 +292,7 @@ import 'package:flutter/material.dart';
   crossAxisAlignment: CrossAxisAlignment.start,
   children: <Widget> [
   Container(
-  child: Text("Samuel Goh", style: TextStyle(
+  child: Text("Rachel Green", style: TextStyle(
   color: Colors.black,
   decoration: TextDecoration.underline))),
   Container(

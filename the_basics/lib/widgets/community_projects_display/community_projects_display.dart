@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:the_basics/widgets/community_projects/communityProjects.dart';
 import 'package:the_basics/widgets/community_projects/communityProjects2.dart';
 import 'package:the_basics/widgets/community_projects/communityProjects3.dart';
+import 'package:the_basics/widgets/community_projects/communityProjects4.dart';
+import 'package:the_basics/widgets/community_projects/communityProjects5.dart';
 
 class CommunityProjectsDisplay extends StatefulWidget {
   @override
@@ -90,9 +92,9 @@ class _CommunityProjectsDisplayState extends State<CommunityProjectsDisplay> {
                 ): Row(
                   children: [
                     const SizedBox(width: 15),
-                    Expanded(child: communityProjectCard()),
+                    Expanded(child: communityProjectCard4()),
                     const SizedBox(width: 15),
-                    Expanded(child: communityProjectCard2()),
+                    Expanded(child: communityProjectCard5()),
                     const SizedBox(width: 15)]
 
                 ),
