@@ -18,7 +18,7 @@ class NavBarLogo extends StatelessWidget {
           "CoLab",
           style: GoogleFonts.roboto(
               fontWeight: FontWeight.bold,
-              fontSize: 40,
+              fontSize: 60,
               color: Colors.black),
         ),
       // ),

@@ -67,7 +67,7 @@ class ProfileUI2 extends StatelessWidget {
 
 
             Text(
-              "Rajat Palankar"
+              "PROFILE"
               ,style: TextStyle(
                 fontSize: 25.0,
                 color:Colors.blueGrey,
@@ -113,6 +113,28 @@ class ProfileUI2 extends StatelessWidget {
                 fontWeight: FontWeight.w300
             ),
 
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            RaisedButton(
+              onPressed: () {
+
+              },
+              padding: EdgeInsets.zero,
+              shape: RoundedRectangleBorder(),
+              child: Container(
+                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 16),
+                decoration: ShapeDecoration(
+                  color: Colors.blue,
+                  // gradient: LinearGradient(colors: [Colors.blue, Colors.green]),
+                  shape: RoundedRectangleBorder(),
+                ),
+                child: Text(
+                  "Settings",
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
             ),
     
             SizedBox(

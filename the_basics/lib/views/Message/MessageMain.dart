@@ -22,6 +22,7 @@ class MessageScreenState extends State<MessageScreen> {
         style:TextStyle(color:Colors.black,
 
           fontWeight:FontWeight.bold,
+          fontSize:40
 
         )
 
@@ -39,9 +40,18 @@ class MessageScreenState extends State<MessageScreen> {
                 ),
                 ListTile(
                   leading: CircleAvatar(
-                    radius: 24.0,
-                    backgroundImage: new NetworkImage(_model.avatarUrl),
-                  ),
+                    radius: 30.0,
+
+
+                    backgroundImage: AssetImage("assets/asia.jpg")
+                      // width: 100,
+                      // height: 100,
+                    // backgroundImage: new NetworkImage(_model.avatarUrl,
+                      // width: 100,
+                      // height: 100,
+                      // fit: BoxFit.cover,
+                    ),
+
                   title: Row(
                     children: <Widget>[
                       Text(_model.name),

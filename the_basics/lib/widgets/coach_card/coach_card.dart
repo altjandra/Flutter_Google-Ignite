@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class coachCard extends StatelessWidget {
   @override
@@ -12,30 +13,53 @@ class coachCard extends StatelessWidget {
             children: <Widget> [
               Padding(
                 padding: EdgeInsets.all(12),
+                // Ink.image(
+                //   image: AssetImage('assets/phone.jpeg'),
+                //   height: 240,
+                //   fit: BoxFit.cover,
+                // ),
                 child: CircleAvatar(
                   maxRadius: 90,
                   // AssetImage("")
-                  backgroundImage: AssetImage(""),
+                  backgroundImage: AssetImage("assets/pexels-andrea-piacquadio-774909.jpg"),
                 ),
               ),
               Container(
                 padding: EdgeInsets.all(15),
                 child: Center(
-                  child: Text("name", 
-                    style: TextStyle(fontWeight: FontWeight.bold)),
+                  child: Text("Kelly Lewis",
+                      style: GoogleFonts.roboto(
+                        fontWeight: FontWeight.bold,
+                          fontSize: 30,
+                          color: Colors.black
+                      ),
+                  ),
                   ),
                 ),
               Container(
                 padding: EdgeInsets.all(15),
                 child: Center(
-                  child: Text("title"),
+                  child: Text("Software Engineer",
+                    style: GoogleFonts.roboto(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25,
+                        color: Colors.black
+                    ),
+
+                  ),
                 ),
               ),
               Container(
                 padding: EdgeInsets.all(15),
                 child: Center(
-                  child: Text("description"),
+                  child: Text("Passionate about the environment!",
+                    style: GoogleFonts.roboto(
+                        // fontWeight: FontWeight.bold,
+                        fontSize: 25,
+                        color: Colors.black
+                    ),
                 ),
+              ),
               ),
               Padding(
                 padding: EdgeInsets.all(20),
