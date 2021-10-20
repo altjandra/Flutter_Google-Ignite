@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c50625c-bace-4b5f-8c4a-61e986ba17b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/the_basics/lib/views/Message/ChatModel.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/the_basics/lib/views/Message/MessageMain.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/login.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/register.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/register.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/routes/router_generator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/routes/router_generator.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/routes/routes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/routes/routes.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/user.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/user.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/views/profile/ProfileUI2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/views/profile/ProfileUI2.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/navigation_bar/navbar_logo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/new_navigation/navbar_logo.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/navigation_bar/navigation_bar_mobile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/navigation_bar/navigation_bar_mobile.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/navigation_bar/navigation_bar_tablet_desktop.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/navigation_bar/navigation_bar_tablet_desktop.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_basics/lib/views/Message/MessageMain.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/views/Message/MessageMain.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/highlights_carousel/highlights_carousel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/highlights_carousel/highlights_carousel.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/new_navigation/nav_bar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/new_navigation/nav_bar.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/new_navigation/navbar_logo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/new_navigation/navbar_logo.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +103,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/the_basics/lib/views/home/home_view.dart</url>
-          <line>57</line>
+          <line>44</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
@@ -133,7 +123,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/the_basics/lib/widgets/community_projects/communityProjects2.dart</url>
-          <line>39</line>
+          <line>25</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
@@ -145,6 +135,11 @@
           <url>file://$PROJECT_DIR$/the_basics/lib/widgets/new_navigation/navbar_logo.dart</url>
           <line>7</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/the_basics/lib/widgets/new_navigation/navbar_logo.dart</url>
+          <line>12</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

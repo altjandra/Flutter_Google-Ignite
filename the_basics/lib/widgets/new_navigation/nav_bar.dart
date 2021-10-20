@@ -131,11 +131,12 @@ class _NavigationBarState extends State<NavigationBar> {
             ),
           ),
              ),
-          SizedBox(width:120),
+
+          SizedBox(width:760),
           NavigationItem(
             selected: index == 0,
-            title: 'CoLab',
-            routeName: routeCareerGuidance,
+            title: 'Explore',
+            routeName: routeHome,
             onHighlight: onHighlight,
           ),
           NavigationItem(

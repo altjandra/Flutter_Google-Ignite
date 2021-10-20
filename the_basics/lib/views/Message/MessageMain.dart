@@ -1,6 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'ChatModel.dart';
 
 class MessageScreen extends StatefulWidget {
@@ -13,7 +14,17 @@ class MessageScreenState extends State<MessageScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Messages'),
+        leading: BackButton(
+            color: Colors.black
+        ),
+        backgroundColor:Colors.white,
+        title: Text('Messages',
+        style:TextStyle(color:Colors.black,
+          fontWeight:FontWeight.bold,
+
+        )
+
+        ),
       ),
       body: Container(
         child: ListView.builder(
@@ -27,8 +38,9 @@ class MessageScreenState extends State<MessageScreen> {
                 ),
                 ListTile(
                   leading: CircleAvatar(
-                    radius: 24.0,
-                    backgroundImage: NetworkImage(_model.avatarUrl),
+                      backgroundColor: Colors.white,
+                    // // backgroundImage: new NetworkImage(_model.avatarUrl),
+                     backgroundImage: AssetImage('assets/australia.jpg'),
                   ),
                   title: Row(
                     children: <Widget>[

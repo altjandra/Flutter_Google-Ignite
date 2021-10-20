@@ -9,11 +9,11 @@ class NavBarLogo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: InkWell(
-        onTap: () {
-          Navigator.push(context,
-              MaterialPageRoute(builder: (context) => const HomeView()));
-        },
+      // child: InkWell(
+      //   onTap: () {
+      //     Navigator.push(context,
+      //         MaterialPageRoute(builder: (context) => const HomeView()));
+      //   },
         child: Text(
           "CoLab",
           style: GoogleFonts.roboto(
@@ -21,7 +21,7 @@ class NavBarLogo extends StatelessWidget {
               fontSize: 40,
               color: Colors.black),
         ),
-      ),
+      // ),
 
 
       // height: 80,

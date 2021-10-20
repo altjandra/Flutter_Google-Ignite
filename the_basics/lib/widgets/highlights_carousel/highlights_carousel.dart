@@ -75,19 +75,19 @@ class _HighlightsCarouselState extends State<HighlightsCarousel> {
                 });
               }
             )),
-            AspectRatio(aspectRatio: 18/8,
-            child:Center(
-                child: Text(
-                  places[_current],
-                  style: GoogleFonts.montserrat(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 50,
-                      letterSpacing: 2.0,
-                      color: Colors.black
-                  ),
-                ),
-            )
-            )
+          //   AspectRatio(aspectRatio: 18/8,
+          //   child:Center(
+          //       child: Text(
+          //         places[_current],
+          //         style: GoogleFonts.montserrat(
+          //             fontWeight: FontWeight.bold,
+          //             fontSize: 50,
+          //             letterSpacing: 2.0,
+          //             color: Colors.black
+          //         ),
+          //       ),
+          //   )
+          //   )
           ]
         )
     ),
