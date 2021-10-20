@@ -35,5 +35,4 @@ In lib/login.dart:
 
 In lib/register.dart:
 
-<img width="964" alt="Screenshot 2021-10-20 at 11 39 50 PM" src="https://user-images.githubusercontent.com/78343366/138125464-2578f2a7-011d-4733-80c7-47cf0a9975ac.png">
 <img width="803" alt="Screenshot 2021-10-20 at 11 45 37 PM" src="https://user-images.githubusercontent.com/78343366/138126455-8224c1b7-50f1-42a9-ae76-c72c195b8301.png">
