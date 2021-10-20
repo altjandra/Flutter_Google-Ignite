@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:the_basics/routes/routes.dart';
+import 'package:the_basics/views/home/home_view.dart';
 import 'package:the_basics/widgets/new_navigation/nav_item.dart';
+
+import 'navbar_logo.dart';
 
 // class NavigationBarWeb extends StatelessWidget {
 //   @override
@@ -109,27 +113,46 @@ class _NavigationBarState extends State<NavigationBar> {
     return Container(
       height: 75.0, // to adjust the height of nav bar
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.end,
-        mainAxisSize: MainAxisSize.max,
+        // mainAxisAlignment: MainAxisAlignment.end,
+        // mainAxisSize: MainAxisSize.max,
         children: [
+          SizedBox(width:60),
+             Container(
+            child: InkWell(
+            onTap: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) => HomeView()));
+          },
+            child: Text(
+              "CoLab",
+              style: GoogleFonts.roboto(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 40,
+                  color: Colors.black),
+            ),
+          ),
+             ),
+          SizedBox(width:120),
           NavigationItem(
             selected: index == 0,
             title: 'Career Guidance',
             routeName: routeCareerGuidance,
             onHighlight: onHighlight,
           ),
-          NavigationItem(
-            selected: index == 1,
-            title: 'Messages',
-            routeName: routeMessages,
-            onHighlight: onHighlight,
-          ),
+
           NavigationItem(
             selected: index == 2,
             title: 'Mentoring',
             routeName: routeMentoring,
             onHighlight: onHighlight,
           ),
+
+          NavigationItem(
+            selected: index == 1,
+            title: 'Messages',
+            routeName: routeMessages,
+            onHighlight: onHighlight,
+          ),
+
           NavigationItem(
             selected: index == 3,
             title: 'Profile',

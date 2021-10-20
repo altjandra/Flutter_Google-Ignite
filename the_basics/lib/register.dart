@@ -15,16 +15,17 @@ class Register extends StatefulWidget {
 class _RegisterState extends State<Register> {
   final _formKey = GlobalKey<FormState>();
   User user = User("", "");
-  String url = "http://localhost:8001/register";
+  String url = "http://localhost:8082/Register";
 
 
 
   Future save() async {
     var res = await http.post(url,
         headers: {'Content-Type': 'application/json'},
+        // body: json.encode({'username':user.username,'email': user.email, 'password': user.password}));
         body: json.encode({'email': user.email, 'password': user.password}));
-    print("SENT");
-    print(res.body);
+    // print("SENT");
+    // print(res.body);
     if (res.body != null) {
       Navigator.pop(context);
     }
@@ -72,50 +73,50 @@ class _RegisterState extends State<Register> {
                 SizedBox(
                   height: 30,
                 ),
-                Align(
-                  alignment: Alignment.center,
-                  child: Text(
-                    "Email",
-                    style: GoogleFonts.roboto(
-                      // fontWeight: FontWeight.bold,
-                        fontSize: 30,
-                        color: Colors.white
-                    ),
-                  ),
-                ),
-                Padding(padding: EdgeInsets.symmetric(horizontal:600),child:
-                TextFormField(
-                  decoration: new InputDecoration(
-                    labelText: "Enter Email",
-                    fillColor: Colors.white,
-                    filled:true,
-                    border: new OutlineInputBorder(
-
-                      borderRadius: new BorderRadius.circular(25.0),
-                      borderSide: new BorderSide(
-                          color:Colors.white
-                      ),
-
-                    ),
-                  ),
-                  // alignment:Alignment.center,
-                  controller: TextEditingController(text: user.email),
-                  onChanged: (val) {
-                    user.email = val;
-                  },
-                  validator: (value) {
-                    if (value.isEmpty) {
-                      return 'Password is Empty';
-                    }
-                    return null;
-                  },
-                  style: TextStyle(fontSize: 30, color: Colors.grey),
-                  // decoration: InputDecoration(
-                  //     errorStyle: TextStyle(fontSize: 20, color: Colors.white)
-                  //     // border: OutlineInputBorder(
-                  //     //     borderSide: BorderSide.none)
-                  //   ),
-                )),
+                // Align(
+                //   alignment: Alignment.center,
+                //   child: Text(
+                //     "Username",
+                //     style: GoogleFonts.roboto(
+                //       // fontWeight: FontWeight.bold,
+                //         fontSize: 30,
+                //         color: Colors.white
+                //     ),
+                //   ),
+                // ),
+                // Padding(padding: EdgeInsets.symmetric(horizontal:600),child:
+                // TextFormField(
+                //   decoration: new InputDecoration(
+                //     labelText: "Enter Username",
+                //     fillColor: Colors.white,
+                //     filled:true,
+                //     border: new OutlineInputBorder(
+                //
+                //       borderRadius: new BorderRadius.circular(25.0),
+                //       borderSide: new BorderSide(
+                //           color:Colors.white
+                //       ),
+                //
+                //     ),
+                //   ),
+                //   // alignment:Alignment.center,
+                //   controller: TextEditingController(text: user.email),
+                //   onChanged: (val) {
+                //     user.username = val;
+                //   },
+                //   validator: (value) {
+                //     if (value.isEmpty) {
+                //       return 'Username is Empty';
+                //     }
+                //     return null;
+                //   },
+                //   style: TextStyle(fontSize: 30, color: Colors.grey),
+                //   // decoration: InputDecoration(
+                //   //     errorStyle: TextStyle(fontSize: 20, color: Colors.white)
+                //   //     // border: OutlineInputBorder(
+                //   //     //     borderSide: BorderSide.none)
+                //   //   ),
+                // )),
                 // Container(
                 //   height: 8,
                 //   color: Color.fromRGBO(255, 255, 255, 0.4),
@@ -126,7 +127,7 @@ class _RegisterState extends State<Register> {
                 Align(
                   alignment: Alignment.center,
                   child: Text(
-                    "Password",
+                    "Email",
                     style: GoogleFonts.roboto(
                       // fontWeight: FontWeight.bold,
                       fontSize: 30,
@@ -138,7 +139,7 @@ class _RegisterState extends State<Register> {
 
                 TextFormField(
                   decoration: new InputDecoration(
-                    labelText: "Enter Password",
+                    labelText: "Enter Email",
                     fillColor: Colors.white,
                     filled:true,
                     border: new OutlineInputBorder(
@@ -150,9 +151,9 @@ class _RegisterState extends State<Register> {
                   ),
 
                   controller:
-                  TextEditingController(text: user.password),
+                  TextEditingController(text: user.email),
                   onChanged: (val) {
-                    user.password = val;
+                    user.email= val;
                   },
                   validator: (value) {
                     if (value.isEmpty) {
@@ -167,24 +168,72 @@ class _RegisterState extends State<Register> {
                     height: 40,
                   ),
 
-                        Center(
-                          child: InkWell(
-                            onTap: () {
-                              Navigator.pop(context);
-                            },
-                            child: Text(
-                              "Already have Account ?",
-                              style: GoogleFonts.roboto(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 40,
-                                  color: Colors.white),
-                            ),
-                          ),
+
+
+                  Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "Password",
+                      style: GoogleFonts.roboto(
+                        // fontWeight: FontWeight.bold,
+                        fontSize: 30,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  Padding(padding: EdgeInsets.symmetric(horizontal:600),child:
+
+                  TextFormField(
+                    decoration: new InputDecoration(
+                      labelText: "Enter Password",
+                      fillColor: Colors.white,
+                      filled:true,
+                      border: new OutlineInputBorder(
+                        borderRadius: new BorderRadius.circular(25.0),
+                        borderSide: new BorderSide(
+                            color:Colors.white
                         ),
-    const SizedBox(
-    height: 40,
-    ),
-    //
+                      ),
+                    ),
+
+                    controller:
+                    TextEditingController(text: user.password),
+                    onChanged: (val) {
+                      user.password = val;
+                    },
+                    validator: (value) {
+                      if (value.isEmpty) {
+                        return 'Password is Empty';
+                      }
+                      return null;
+                    },
+                    style: TextStyle(fontSize: 30, color: Colors.grey),
+
+                  )),
+                  const SizedBox(
+                    height: 40,
+                  ),
+
+
+              Center(
+                child: InkWell(
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                  child: Text(
+                    "Already have Account ?",
+                    style: GoogleFonts.roboto(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 40,
+                        color: Colors.white),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 40,
+              ),
+              //
+
                       Container(
                       height: 90,
                       width: 90,

@@ -20,7 +20,7 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
   final _formKey = GlobalKey<FormState>();
   User user = User("", "");
-  String url = "http://localhost:8001/login";
+  String url = "http://localhost:8082/Login";
 
   Future hideBar() async=>
       SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.top]);
@@ -134,7 +134,7 @@ class _LoginState extends State<Login> {
                           },
                           validator: (value) {
                             if (value.isEmpty) {
-                              return 'Password is Empty';
+                              return 'Email is Empty';
                             }
                             return null;
                           },
@@ -186,7 +186,7 @@ class _LoginState extends State<Login> {
                           },
                           validator: (value) {
                             if (value.isEmpty) {
-                              return 'Email is Empty';
+                              return 'Password is Empty';
                             }
                             return null;
                           },

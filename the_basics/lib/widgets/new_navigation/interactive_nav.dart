@@ -73,7 +73,7 @@ class InteractiveNavItem extends MouseRegion {
             appContainer.style.cursor = 'default';
           },
           child: InteractiveText(
-            text: text,
+            text:text,
             routeName: routeName,
             selected: selected,
           ),

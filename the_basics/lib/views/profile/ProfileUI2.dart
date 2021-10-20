@@ -63,17 +63,6 @@ class ProfileUI2 extends StatelessWidget {
               height: 60,
             ),
 
-            // Align(
-            //   alignment: Alignment.center,
-            //   child: Text(
-            //     "Kelly Baker",
-            //     style: GoogleFonts.montserrat(
-            //         fontWeight: FontWeight.bold,
-            //         fontSize: 25,
-            //         letterSpacing: 2.0,
-            //         color: Colors.black
-            //     ),
-            //   ),
 
             Text(
               "Rajat Palankar"

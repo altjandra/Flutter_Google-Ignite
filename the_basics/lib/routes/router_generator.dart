@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart'; //for IOS app 
 import 'package:flutter/material.dart'; //some essestial flutter library
+import 'package:the_basics/views/Message/MessageMain.dart';
 
 
 
@@ -25,7 +26,7 @@ class RouteGenerator {
             return MaterialPageRoute(builder: (_) => CareerGuidance()); // this homeview() thing should be change to the various views later 
         break;
         case routeMessages:
-            return MaterialPageRoute(builder: (_) => HomeView());
+            return MaterialPageRoute(builder: (_) => MessageScreen());
         break;
         case routeMentoring:
             return MaterialPageRoute(builder: (_) => Mentoring());
@@ -39,6 +40,9 @@ class RouteGenerator {
 
       case routeProfile:
         return  MaterialPageRoute(builder: (_) => ProfileUI2());
+        break;
+      case routeHome:
+        return  MaterialPageRoute(builder: (_) => HomeView());
         break;
     }
   }
