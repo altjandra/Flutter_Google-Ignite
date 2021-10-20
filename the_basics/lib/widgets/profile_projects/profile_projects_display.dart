@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:the_basics/widgets/community_projects/communityProjects2.dart';
+import 'package:the_basics/widgets/community_projects/communityProjects3.dart';
 import 'package:the_basics/widgets/profile_projects/profileProjectCard.dart';
 import 'package:the_basics/widgets/profile_projects/profileProjectCard2.dart';
 import 'package:the_basics/widgets/profile_projects/profileProjectCard3.dart';
@@ -73,9 +75,9 @@ class _ProfileProjectsDisplayState extends State<ProfileProjectsDisplay> {
                 ): Row(
                   children: [
                     const SizedBox(width: 15),
-                    Expanded(child:  profileProjectCard()),
+                    Expanded(child: communityProjectCard3()),
                     const SizedBox(width: 15),
-                    Expanded(child:  profileProjectCard2()),
+                    Expanded(child: communityProjectCard2()),
                     const SizedBox(width: 15),
                     ]
                 ),

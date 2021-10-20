@@ -16,7 +16,7 @@ class profileProjectCard2  extends StatelessWidget {
               Stack(
                 children: [
                   Ink.image(
-                    image: AssetImage('assets/website2.jpeg'),
+                    image: AssetImage('assets/final.jpeg'),
                     height: 240,
                     fit: BoxFit.cover,
                   ),
@@ -49,8 +49,8 @@ class profileProjectCard2  extends StatelessWidget {
                   ), 
                   Row(
                   children: [
-                  Icon(Icons.bookmark_border_outlined),
-                  const SizedBox(width: 12),
+                  // Icon(Icons.bookmark_border_outlined),
+                  // const SizedBox(width: 12),
                   Icon(Icons.message_outlined),
                   const SizedBox(width: 12),
                   Icon(Icons.double_arrow_rounded),

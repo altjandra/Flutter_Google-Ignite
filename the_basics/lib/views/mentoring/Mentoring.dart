@@ -45,7 +45,7 @@ class Mentoring extends StatelessWidget {
               Align(
               alignment: Alignment.center,
                     child: Text(
-                    "Coaches",
+                    "Mentors",
                     style: GoogleFonts.montserrat(
                      fontWeight: FontWeight.bold,
                     fontSize: 60,
