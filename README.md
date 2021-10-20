@@ -29,8 +29,9 @@ comment out these lines of codes from lib/login.dart.
 and replace with the commented portions
 
 In lib/login.dart:
+<img width="811" alt="Screenshot 2021-10-20 at 11 47 19 PM" src="https://user-images.githubusercontent.com/78343366/138126767-2acc92d0-d85d-4112-96e0-f778b7c855b9.png">
 
-<img width="725" alt="Screenshot 2021-10-20 at 11 38 34 PM" src="https://user-images.githubusercontent.com/78343366/138125244-aa783ba6-e070-4820-b309-b7a41eb2bae6.png">
+
 
 In lib/register.dart:
 
