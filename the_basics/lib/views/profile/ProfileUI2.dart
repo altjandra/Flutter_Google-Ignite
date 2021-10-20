@@ -36,6 +36,25 @@ class ProfileUI2 extends StatelessWidget {
         Column(
           children: [
             NavigationBar(),
+            SizedBox(
+              height: 20,
+            ),
+
+
+            Text(
+              "PROFILE"
+              ,style: TextStyle(
+                fontSize: 25.0,
+                color:Colors.black,
+                fontWeight: FontWeight.bold
+            ),
+
+            ),
+
+            SizedBox(
+              height: 10,
+            ),
+
             Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
@@ -55,7 +74,7 @@ class ProfileUI2 extends StatelessWidget {
                       // "https://images.app.goo.gl/RZkzhEZU68oXE3p59"
                        "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1327&q=80"
                   ),
-                  radius: 60.0,
+                  radius: 90.0,
                 ),
               ),
             ),
@@ -66,20 +85,6 @@ class ProfileUI2 extends StatelessWidget {
             ),
 
 
-            Text(
-              "PROFILE"
-              ,style: TextStyle(
-                fontSize: 25.0,
-                color:Colors.blueGrey,
-                fontWeight: FontWeight.bold
-            ),
-
-            ),
-           
-
-            SizedBox(
-              height: 10,
-            ),
 
             Align(
             alignment: Alignment.center,
@@ -87,7 +92,7 @@ class ProfileUI2 extends StatelessWidget {
             "Singapore,Singapore",
             style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 25,
+            fontSize: 15,
             color: Colors.black)
             ),
             ),
@@ -107,40 +112,21 @@ class ProfileUI2 extends StatelessWidget {
               ),
             const SizedBox(height: 10),
             Text(
-              "My dream is to build a mobile app that can change the world"
+              "App Developer || Digital Marketer"
               ,style: TextStyle(
-                fontSize: 15.0,
+                fontSize: 18.0,
                 color:Colors.black45,
                 fontWeight: FontWeight.w300
             ),
-
             ),
             SizedBox(
               height: 20,
             ),
-            RaisedButton(
-              onPressed: () {
 
-              },
-              padding: EdgeInsets.zero,
-              shape: RoundedRectangleBorder(),
-              child: Container(
-                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 16),
-                decoration: ShapeDecoration(
-                  color: Colors.blue,
-                  // gradient: LinearGradient(colors: [Colors.blue, Colors.green]),
-                  shape: RoundedRectangleBorder(),
-                ),
-                child: Text(
-                  "Settings",
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-            ),
-    
-            SizedBox(
-              height: 10,
-            ),
+            //
+            // SizedBox(
+            //   height: 10,
+            // ),
              RaisedButton(
               onPressed: () {
 
@@ -160,18 +146,49 @@ class ProfileUI2 extends StatelessWidget {
                 ),
               ),
             ),
+
+            SizedBox(
+              height: 10,
+            ),
+
+
+            RaisedButton(
+              onPressed: () {
+
+              },
+              padding: EdgeInsets.zero,
+              shape: RoundedRectangleBorder(),
+              child: Container(
+                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 16),
+                decoration: ShapeDecoration(
+                  color: Colors.blue,
+                  // gradient: LinearGradient(colors: [Colors.blue, Colors.green]),
+                  shape: RoundedRectangleBorder(),
+                ),
+                child: Text(
+                  "Settings",
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+            ),
+
+
+
             SizedBox(
               height: 50,
             ),
 
             Text(
-              "App Developer || Digital Marketer"
+              "My dream is to build a mobile app that can change the world"
               ,style: TextStyle(
-                fontSize: 18.0,
+                fontSize: 15.0,
                 color:Colors.black45,
                 fontWeight: FontWeight.w300
             ),
+
             ),
+
+
             SizedBox(
               height:40,
             ),

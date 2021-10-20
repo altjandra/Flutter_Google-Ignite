@@ -37,7 +37,7 @@ class _communityProjectCardState  extends State<communityProjectCard> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
                   child: Align(alignment: Alignment.centerLeft, child: Text(
-                  "Telegram Theme Design"
+                  "One Stop Platform"
                   ,style: TextStyle(
                     fontSize: 25.0,
                     fontWeight: FontWeight.normal
@@ -92,7 +92,7 @@ class _communityProjectCardState  extends State<communityProjectCard> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget> [  
                       Container(
-                        child: Text("Samuel Goh", style: TextStyle(
+                        child: Text("Emily Gross", style: TextStyle(
                       color: Colors.black,
                       decoration: TextDecoration.underline))), 
                       Container(
@@ -162,7 +162,7 @@ class _communityProjectCardState  extends State<communityProjectCard> {
                                     Padding(
                                   padding: const EdgeInsets.symmetric(vertical: 20.0),
                                   child: Align(alignment: Alignment.centerLeft, child: Text(
-                                  "Telegram Theme Design"
+                                  "One Stop Platform"
                                   ,style: TextStyle(
                                     fontSize: 25.0,
                                     fontWeight: FontWeight.normal
@@ -291,7 +291,7 @@ class _communityProjectCardState  extends State<communityProjectCard> {
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                       children: <Widget> [  
                                         Container(
-                                          child: Text("Samuel Goh", style: TextStyle(
+                                          child: Text("Emily Gross", style: TextStyle(
                                         color: Colors.black,
                                         decoration: TextDecoration.underline))), 
                                         Container(

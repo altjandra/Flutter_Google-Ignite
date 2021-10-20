@@ -15,7 +15,7 @@ class profileProjectCard  extends StatelessWidget {
               Stack(
                 children: [
                   Ink.image(
-                    image: AssetImage('assets/c35b2be4b09afcc1d0fadf8ccf783cb4.png'),
+                    image: AssetImage('The-4-Golden-Rules-of-UI-Design-Header-1257x550.jpeg'),
                     height: 240,
                     fit: BoxFit.cover,
                   ),
@@ -24,7 +24,7 @@ class profileProjectCard  extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
                 child: Align(alignment: Alignment.centerLeft, child: Text(
-                "Telegram Theme Design"
+                "Music Mixtape"
                 ,style: TextStyle(
                   fontSize: 25.0,
                   fontWeight: FontWeight.normal
@@ -48,8 +48,8 @@ class profileProjectCard  extends StatelessWidget {
                   ), 
                   Row(
                   children: [
-                  Icon(Icons.bookmark_border_outlined),
-                  const SizedBox(width: 12),
+                  // Icon(Icons.bookmark_border_outlined),
+                  // const SizedBox(width: 12),
                   Icon(Icons.message_outlined),
                   const SizedBox(width: 12),
                   Icon(Icons.double_arrow_rounded),

@@ -43,6 +43,7 @@ class CourseDetails extends StatelessWidget {
                 '“You are never too old to set another goal or to dream a new dream.” - C.S. Lewis',
                 style: TextStyle(
                   fontSize: descriptionSize,
+                  fontWeight: FontWeight.bold,
                   height: 1.7,
                 ),
                 textAlign: textAlignment,
