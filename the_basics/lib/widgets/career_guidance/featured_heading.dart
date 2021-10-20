@@ -46,10 +46,10 @@ class FeaturedHeading extends StatelessWidget {
                 Text(
                   'Building a Portfolio - Starts Here!',
                   style: TextStyle(
-                    fontSize: 40,
+                    fontSize: 50, //was 40
                     fontFamily: 'Montserrat',
                     fontWeight: FontWeight.bold,
-                    fontStyle: FontStyle.italic,
+                    // fontStyle: FontStyle.italic,
                   ),
                 ),
                 Expanded(
