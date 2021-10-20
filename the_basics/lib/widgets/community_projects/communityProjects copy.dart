@@ -1,19 +1,16 @@
 import 'package:flutter/material.dart';
 
+
 class communityProjectCard extends StatefulWidget {
 
   @override
   _communityProjectCardState createState() => _communityProjectCardState();
-  
-
 }
 
 
 
 class _communityProjectCardState  extends State<communityProjectCard> {
   bool _success = true;
-  bool _projectButton = false;
-
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -26,7 +23,7 @@ class _communityProjectCardState  extends State<communityProjectCard> {
             child: Column(
               children: [
                 Stack(
-                  children: [ 
+                  children: [
                     Ink.image(
                       image: AssetImage('assets/c35b2be4b09afcc1d0fadf8ccf783cb4.png'),
                       height: 240,
@@ -84,7 +81,6 @@ class _communityProjectCardState  extends State<communityProjectCard> {
                         radius: 30.0,
                       ),
                     ),
-                  
                   Padding(
                     padding: const EdgeInsets.all(15.0),
                     child: Column(
@@ -169,7 +165,7 @@ class _communityProjectCardState  extends State<communityProjectCard> {
                                   ),
 
                                 Padding(
-                                  padding: const EdgeInsets.symmetric(vertical: 10.0),
+                                  padding: const EdgeInsets.symmetric( vertical: 10.0),
                                   child: Text(
                                   "To improve the notifications system of Telegram"
                                   ,style: TextStyle(
@@ -178,7 +174,6 @@ class _communityProjectCardState  extends State<communityProjectCard> {
                                         ),
                                       ),
                                     ),
-                                const SizedBox(height: 20),
                                   
                                 MaterialButton(
                                 color: Colors.blue,
@@ -191,7 +186,7 @@ class _communityProjectCardState  extends State<communityProjectCard> {
                                   ),
                                 ), 
 
-                                const SizedBox(height: 15),
+                                const SizedBox(height: 12),
 
                                 Row(
                                   children: [
@@ -206,32 +201,26 @@ class _communityProjectCardState  extends State<communityProjectCard> {
                                   const SizedBox(width: 12)],
                                   ),
 
-                                const SizedBox(height: 15),
+                                const SizedBox(height: 12),
 
                                 Row(children: [
                                    RaisedButton(
-                                  
+                                  onPressed: () {},
                                   padding: EdgeInsets.zero,
                                   shape: RoundedRectangleBorder(),
                                   child: Container(
                                     padding: EdgeInsets.symmetric(vertical: 10, horizontal: 16),
                                     decoration: ShapeDecoration(
-                                      color: _projectButton ? Color.fromRGBO(91,184,235,1) : Color.fromRGBO(0,116,225,1),
+                                      color: Colors.blue,
                                       // gradient: LinearGradient(colors: [Colors.blue, Colors.green]),
                                       shape: RoundedRectangleBorder(),
                                     ),
                                     child: Text(
-                                      _projectButton ? 
-                                       "Added to Projects" : "Work for Projects" ,
+                                      "Work for Projects",
                                       style: TextStyle(color: Colors.white),
                                     ),
                                   ),
-                                  onPressed: () {setState(() {
-                                            _projectButton = true;
-                                          
-                                          });},
                               ),
-                              const SizedBox(width: 12),
                                 RaisedButton(
                                   onPressed: () {},
                                   padding: EdgeInsets.zero,
@@ -239,7 +228,8 @@ class _communityProjectCardState  extends State<communityProjectCard> {
                                   child: Container(
                                     padding: EdgeInsets.symmetric(vertical: 10, horizontal: 16),
                                     decoration: ShapeDecoration(
-                                      color: Color.fromRGBO(0,116,225,1),
+                                      color: Colors.blue,
+                                      // gradient: LinearGradient(colors: [Colors.blue, Colors.green]),
                                       shape: RoundedRectangleBorder(),
                                     ),
                                     child: Text(
@@ -251,197 +241,7 @@ class _communityProjectCardState  extends State<communityProjectCard> {
                           
                                 ],
                                   ),
-
-                                  Padding(
-                                  padding: const EdgeInsets.symmetric( vertical: 10.0),
-                                  child: Text(
-                                  "34 others are working on this\n3 are looking for collaborators",
-                                  style: TextStyle(
-                                    fontSize: 10.0,
-                                    color: Colors.grey
-                                        ),
-                                      ),
-                                    ),
-
-                                  Container(
-                                    color: Colors.grey,
-                                    height: 1,
-                                    width: 380,
-                                  ),
-
-                                  const SizedBox(height: 10),
-                                 
-                             Row(
-                                    children: [
-                                      Container(
-                                        child: CircleAvatar(
-                                          backgroundImage: NetworkImage(
-                                              "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1327&q=80"
-                                          ),
-                                          radius: 30.0,
-                                        ),
-                                      ),
-                                    Padding(
-                                      padding: const EdgeInsets.all(15.0),
-                                      child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.start,
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: <Widget> [  
-                                        Container(
-                                          child: Text("Samuel Goh", style: TextStyle(
-                                        color: Colors.black,
-                                        decoration: TextDecoration.underline))), 
-                                        Container(
-                                          child: Text("Submitted 5 mins ago", style: TextStyle(
-                                        color: Colors.grey,
-                                        fontStyle: FontStyle.italic))),
-                                        ]
-                                      ),
-                                    ),
-                                    
-                                    ]
-                                  ),
-
-                                  const SizedBox(height: 10),
-
-                                  Container(
-                                    color: Colors.grey,
-                                    height: 1,
-                                    width: 380,
-                                  ),
-
-                              
-                                  Row(
-                                    children: [
-                                      Container(
-                                        // padding: EdgeInsets.only(left: 18.0),
-                                        child: CircleAvatar(
-                                          backgroundImage: AssetImage("anonymous-avatar-icon-25.jpg"),
-                                          radius: 15.0,
-                                        ),
-                                      ),
-                                    Padding(
-                                      padding: const EdgeInsets.all(10.0),
-                                      child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.start,
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: <Widget> [  
-                                        Container(
-                                          child: Text("User", style: TextStyle(
-                                        color: Colors.black,
-                                        decoration: TextDecoration.underline))), 
-                                        Container(
-                                          child: Text("comment comment comment comment comment", style: TextStyle(
-                                        color: Colors.grey,
-                                        fontStyle: FontStyle.italic))),
-                                        ]
-                                      ),
-                                    ),
-                                    ]
-                                  ),
-
-                                  const SizedBox(height: 5),
-
-                                  Row(
-                                    children: [
-                                      Container(
-                                        // padding: EdgeInsets.only(left: 18.0),
-                                        child: CircleAvatar(
-                                          backgroundImage: AssetImage("anonymous-avatar-icon-25.jpg"),
-                                          radius: 15.0,
-                                        ),
-                                      ),
-                                    Padding(
-                                      padding: const EdgeInsets.all(10.0),
-                                      child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.start,
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: <Widget> [  
-                                        Container(
-                                          child: Text("User", style: TextStyle(
-                                        color: Colors.black,
-                                        decoration: TextDecoration.underline))), 
-                                        Container(
-                                          child: Text("comment comment comment comment comment", style: TextStyle(
-                                        color: Colors.grey,
-                                        fontStyle: FontStyle.italic))),
-                                        ]
-                                      ),
-                                    ),
-                                    ]
-                                  ),
-
-                                  const SizedBox(height: 5),
-
-                                  Row(
-                                    children: [
-                                      Container(
-                                        // padding: EdgeInsets.only(left: 18.0),
-                                        child: CircleAvatar(
-                                          backgroundImage: AssetImage("anonymous-avatar-icon-25.jpg"),
-                                          radius: 15.0,
-                                        ),
-                                      ),
-                                    Padding(
-                                      padding: const EdgeInsets.all(10.0),
-                                      child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.start,
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: <Widget> [  
-                                        Container(
-                                          child: Text("User", style: TextStyle(
-                                        color: Colors.black,
-                                        decoration: TextDecoration.underline))), 
-                                        Container(
-                                          child: Text("comment comment comment comment comment", style: TextStyle(
-                                        color: Colors.grey,
-                                        fontStyle: FontStyle.italic))),
-                                        ]
-                                      ),
-                                    ),
-                                    ]
-                                  ),
-
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Container(
-                                          margin: const EdgeInsets.all(15.0),
-                                          padding: const EdgeInsets.all(3.0),
-                                          decoration: BoxDecoration(
-                                            border: Border.all(color: Colors.blueAccent)
-                                          ),
-                                          child: Text('Type a comment...'),
-                                        ),
-                                    
-                                              
-                                      RaisedButton(
-                                  onPressed: () {},
-                                  padding: EdgeInsets.zero,
-                                  shape: RoundedRectangleBorder(),
-                                  child: Container(
-                                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
-                                    decoration: ShapeDecoration(
-                                      color: Color.fromRGBO(0,116,225,1),
-                                      // gradient: LinearGradient(colors: [Colors.blue, Colors.green]),
-                                      shape: RoundedRectangleBorder(),
-                                    ),
-                                    child: Text(
-                                      "Send",
-                                      style: TextStyle(color: Colors.white),
-                                    ),
-                                  ),
-                              ),
-                                      
                                     ],
-                                  )
-            
-
-                                  
-                                  ],
-
-                                  
-                  
                                       ),
 
                                 //  SizedBox.shrink(),
@@ -456,7 +256,81 @@ class _communityProjectCardState  extends State<communityProjectCard> {
                                         }))
 
                             ],
-                            
+                            // child: Column(
+                            //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            //   children: [
+                            //     Row(
+                            //       mainAxisAlignment:
+                            //           MainAxisAlignment.spaceBetween,
+                            //       children: [
+                            //         SizedBox.shrink(),
+                            //         IconButton(
+                            //             icon: Icon(Icons.cancel),
+                            //             onPressed: () {
+                            //               Navigator.pop(context);
+                            //               setState(() {
+                            //                 _success = !_success;
+                            //               });
+                            //             })
+                            //       ],
+                            //     ),
+                            //     Image.asset('assets/c35b2be4b09afcc1d0fadf8ccf783cb4.png',
+                            //       height: 200,
+                            //     ),
+                            //     Text(
+                            //       'Success' ,
+                            //       style: TextStyle(
+                            //         color: 
+                            //             Color(0xff81cffc),
+                                       
+                            //         fontWeight: FontWeight.bold,
+                            //         fontSize: 25,
+                            //       ),
+                            //     ),
+                            //     Text(
+                            //         'Your guitar is tuned and now you are ready to hit the stage and rock!',
+                                     
+                            //       textAlign: TextAlign.center,
+                            //       style: TextStyle(
+                            //         color: Colors.black54,
+                            //         fontSize: 15,
+                            //       ),
+                            //     ),
+                            //     Container(
+                            //       height: 50,
+                            //       width: 235,
+                            //       decoration: BoxDecoration(
+                            //         borderRadius: BorderRadius.circular(30),
+                            //       ),
+                            //       child: Material(
+                            //         borderRadius: BorderRadius.circular(30),
+                            //         color: 
+                            //             Color(0xff81cffc),
+                                      
+                            //         child: MaterialButton(
+                            //           onPressed: () {},
+                            //           child: Row(
+                            //             mainAxisAlignment:
+                            //                 MainAxisAlignment.center,
+                            //             children: [
+                            //               Expanded(
+                            //                   child: Text(
+                            //                 'Let\'s Rock!',
+                                               
+                            //                 textAlign: TextAlign.center,
+                            //                 style: TextStyle(
+                            //                   fontSize: 20,
+                            //                   color: Colors.white,
+                            //                   fontWeight: FontWeight.bold,
+                            //                 ),
+                            //               ))
+                            //             ],
+                            //           ),
+                            //         ),
+                            //       ),
+                            //     )
+                            //   ],
+                            // ),
                                 ),
                               ),
                             ),

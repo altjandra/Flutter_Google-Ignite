@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 
-class communityProjectCard3  extends StatelessWidget {
+class profileProjectCard  extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -16,7 +15,7 @@ class communityProjectCard3  extends StatelessWidget {
               Stack(
                 children: [
                   Ink.image(
-                    image: AssetImage('assets/phone.jpeg'),
+                    image: AssetImage('assets/c35b2be4b09afcc1d0fadf8ccf783cb4.png'),
                     height: 240,
                     fit: BoxFit.cover,
                   ),
@@ -25,7 +24,7 @@ class communityProjectCard3  extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
                 child: Align(alignment: Alignment.centerLeft, child: Text(
-                "Dashboard"
+                "Telegram Theme Design"
                 ,style: TextStyle(
                   fontSize: 25.0,
                   fontWeight: FontWeight.normal

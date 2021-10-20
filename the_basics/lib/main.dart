@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       debugShowCheckedModeBanner: false, //added
-      title: 'Flutter Demo',
+      title: 'CoLab',
       theme: ThemeData(
         primarySwatch: Colors.blue, 
         textTheme: Theme.of(context).textTheme.apply(fontFamily: 'Open Sans'),visualDensity: VisualDensity.adaptivePlatformDensity, //added

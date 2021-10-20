@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:the_basics/widgets/community_projects/communityProjects.dart';
+import 'package:the_basics/widgets/community_projects/communityProjects2.dart';
 import 'package:the_basics/views/home/home_content_desktop.dart';
 import 'package:the_basics/views/home/home_content_mobile.dart';
 import 'package:the_basics/widgets/centered_view/centered_view.dart';
@@ -32,19 +32,6 @@ class HomeView extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
 
               children: <Widget>[
-                // NavigationBar(), //edit this for the nav bar
-
-                // Container(
-                //   decoration: BoxDecoration(
-                //       image: DecorationImage(
-                //       image: NetworkImage(
-                //               "https://images.unsplash.com/photo-1579202673506-ca3ce28943ef"
-                //           ),
-                //       fit: BoxFit.cover
-                //   )
-                //   width: double.infinity,
-                  // width: MediaQuery.of(context).size.width,
-                  // height: MediaQuery.of(context).size.height,
               Container(
                   decoration: BoxDecoration(
                   image: DecorationImage(
@@ -62,34 +49,13 @@ class HomeView extends StatelessWidget {
                   desktop: HomeContentDesktop(),
                 )),
                 ),
-                // Padding( //  vertical: 20.0, horizontal: 40.0
-                //   padding: const EdgeInsets.symmetric(vertical: 150.0),
-                //   child: ScreenTypeLayout(
-                //   mobile: HomeContentMobile(),
-                //   desktop: HomeContentDesktop(),
-                // )),
+                
                 HighlightsCarousel(),
-                CommunityProjectsDisplay()
+                
+                CommunityProjectsDisplay(),
 
+               
 
-                // HighlightProjects(),
-                // ScreenTypeLayout(
-                //   mobile: HomeContentMobile(),
-                //   desktop: HomeContentDesktop(),
-                // ),
-                // Expanded(
-                //     child: ScreenTypeLayout(
-                //   mobile: HomeContentMobile(),
-                //   desktop: HomeContentDesktop(),
-                // )),
-                // Row(
-                //   children: [
-                //     Expanded(child: communityProjectCard()),
-                //     const SizedBox(width: 12),
-                //     Expanded(child: communityProjectCard()),
-                //     const SizedBox(width: 12),
-                //     Expanded(child: communityProjectCard()),]
-                // )
               ],
             ),
           ),

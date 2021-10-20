@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 
-class profileProjectCard  extends StatelessWidget {
+class profileProjectCard3  extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      // width: 200.0,
-      // height: 300.0,
       child: Card(
           clipBehavior: Clip.antiAlias,
           shape: RoundedRectangleBorder(
@@ -17,29 +16,24 @@ class profileProjectCard  extends StatelessWidget {
               Stack(
                 children: [
                   Ink.image(
-                    image: NetworkImage(
-                      'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1327&q=80',
-                    ),
+                    image: AssetImage('assets/phone.jpeg'),
                     height: 240,
                     fit: BoxFit.cover,
-                  ),
-                  Positioned(
-                    bottom: 16,
-                    right: 16,
-                    left: 16,
-                    child: Text(
-                      'Telegram theme design',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                        fontSize: 24,
-                      ),
-                    ),
                   ),
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
+                padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
+                child: Align(alignment: Alignment.centerLeft, child: Text(
+                "Dashboard"
+                ,style: TextStyle(
+                  fontSize: 25.0,
+                  fontWeight: FontWeight.normal
+            ),),),
+              ),
+              
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -54,9 +48,13 @@ class profileProjectCard  extends StatelessWidget {
                       ),
                   ), 
                   Row(
-                  children: [Icon(Icons.bookmark_border_outlined),
+                  children: [
+                  Icon(Icons.bookmark_border_outlined),
+                  const SizedBox(width: 12),
                   Icon(Icons.message_outlined),
-                  Icon(Icons.share)],
+                  const SizedBox(width: 12),
+                  Icon(Icons.double_arrow_rounded),
+                  const SizedBox(width: 12)],
                   ),
                 ],),
               ),
@@ -66,7 +64,7 @@ class profileProjectCard  extends StatelessWidget {
               Row(
                 children: [
                   Container(
-                    alignment: Alignment(-0.9,1.0),
+                    padding: EdgeInsets.only(left: 18.0),
                     child: CircleAvatar(
                       backgroundImage: NetworkImage(
                           "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1327&q=80"
@@ -74,25 +72,28 @@ class profileProjectCard  extends StatelessWidget {
                       radius: 30.0,
                     ),
                   ),
-                Column(children: <Widget> [
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Container(
+                Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget> [  
+                    Container(
                       child: Text("Samuel Goh", style: TextStyle(
                     color: Colors.black,
-                    decoration: TextDecoration.underline)))), 
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Container(
+                    decoration: TextDecoration.underline))), 
+                    Container(
                       child: Text("Submitted 5 mins ago", style: TextStyle(
                     color: Colors.grey,
-                    fontStyle: FontStyle.italic)))),
-                  ]
+                    fontStyle: FontStyle.italic))),
+                    ]
+                  ),
                 ),
                 
                 ]
               ),
               Padding(padding: EdgeInsets.all(16).copyWith(bottom: 0)),
+                
               
             ],
           ),
