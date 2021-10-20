@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c50625c-bace-4b5f-8c4a-61e986ba17b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects/communityProjects4.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects/communityProjects5.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/login.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/views/mentoring/Mentoring.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/views/mentoring/Mentoring.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/views/profile/ProfileUI2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/views/profile/ProfileUI2.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects/communityProjects.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects/communityProjects.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects/communityProjects2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects/communityProjects2.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects_display/community_projects_display.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/community_projects_display/community_projects_display.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/course_details/course_details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/course_details/course_details.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/profile_projects/profileProjectCard.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/profile_projects/profileProjectCard.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/profile_projects/profileProjectCard2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/profile_projects/profileProjectCard2.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/profile_projects/profileProjectCard3.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/profile_projects/profileProjectCard3.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/profile_projects/profile_projects_display.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/profile_projects/profile_projects_display.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_basics/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/pubspec.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="9c50625c-bace-4b5f-8c4a-61e986ba17b8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
