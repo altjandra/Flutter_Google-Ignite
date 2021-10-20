@@ -26,22 +26,22 @@ class _LoginState extends State<Login> {
       SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.top]);
 
   Future save() async {
-    var res = await http.post(url,
-        headers: {'Content-Type': 'application/json'},
-        body: json.encode({'email': user.email, 'password': user.password}));
+    // var res = await http.post(url,
+    //     headers: {'Content-Type': 'application/json'},
+    //     body: json.encode({'email': user.email, 'password': user.password}));
 
-      validator: (value) {
-      if (res.statusCode == 200) {
-        return 'Email is Empty';
-      } else {
+      // validator: (value) {
+      // if (res.body != null) {
+      //   return 'Email is Empty';
+      // } else {
         Navigator.push(
             context,
             MaterialPageRoute(
               builder: (context) => HomeView(),
             ));
-        return "Incorrect Username And Password";
-        }
-      };
+        // return "Incorrect Username And Password";
+        // };
+      // };
 
     //   return "Incorrect Username And Password";
     // },

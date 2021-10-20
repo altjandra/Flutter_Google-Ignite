@@ -46,7 +46,7 @@ class _CareerGuidanceState extends State<CareerGuidance> {
                 'EXPLORE',
                 style: TextStyle(
                   color: Colors.blueGrey.shade100,
-                  fontSize: 20,
+                  fontSize: 20,  //font size here  initally 20
                   fontFamily: 'Montserrat',
                   fontWeight: FontWeight.w400,
                   letterSpacing: 3,
@@ -71,7 +71,7 @@ class _CareerGuidanceState extends State<CareerGuidance> {
                     height: screenSize.height * 0.45,
                     width: screenSize.width,
                     child: Image.asset(
-                      'portfolio.jpg',
+                      'grad6.jpeg', //change image here
                       fit: BoxFit.cover,
                     ),
                   ),

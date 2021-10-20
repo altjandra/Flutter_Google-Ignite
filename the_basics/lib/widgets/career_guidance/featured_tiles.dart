@@ -12,11 +12,12 @@ class FeaturedTiles extends StatelessWidget {
   final List<String> assets = [
     'coaching.jpg',
     'guide.jpg',
-    'career.png',
+    'practice.png',
+    'career.png'
     // 'portfolio.jpg'
   ];
 
-  final List<String> title = ['Coaching', 'Beginner Guide', 'Find Our More About Your Career'];
+  final List<String> title = ['Coaching', 'Your go-to Beginner Guide', 'Practice Your Skills' , 'Find Our More About Your Career'];
 
   @override
   Widget build(BuildContext context) {
@@ -56,6 +57,7 @@ class FeaturedTiles extends StatelessWidget {
                                   fontSize: 16,
                                   fontFamily: 'Montserrat',
                                   fontWeight: FontWeight.w500,
+                                  decoration: TextDecoration.underline,
                                 ),
                               ),
                             ),
@@ -82,8 +84,8 @@ class FeaturedTiles extends StatelessWidget {
                   (int pageIndex) => Column(
                     children: [
                       SizedBox(
-                        height: screenSize.width / 6,
-                        width: screenSize.width / 3.8,
+                        height: screenSize.width / 10, //initially is 6
+                        width: screenSize.width / 5.5, //initially is 3.8
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(5.0),
                           child: Image.asset(
