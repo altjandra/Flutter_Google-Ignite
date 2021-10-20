@@ -469,7 +469,6 @@ class _communityProjectCardState  extends State<communityProjectCard> {
                 );
               }
             }
-          
         
 
            
