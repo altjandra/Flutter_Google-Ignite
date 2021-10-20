@@ -28,6 +28,8 @@ class _RegisterState extends State<Register> {
       Navigator.pop(context);
     }
 
+    // Navigator.pop(context);
+
   }
 
   @override

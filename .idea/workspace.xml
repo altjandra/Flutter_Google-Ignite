@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c50625c-bace-4b5f-8c4a-61e986ba17b8" name="Default Changelist" comment="" />
+    <list default="true" id="9c50625c-bace-4b5f-8c4a-61e986ba17b8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_basics/lib/login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/login.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_basics/lib/register.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/register.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_basics/lib/views/Career/career_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/views/Career/career_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/career_guidance/featured_heading.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/career_guidance/featured_heading.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_basics/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/pubspec.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,12 +115,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/the_basics/lib/login.dart</url>
-          <line>94</line>
+          <line>95</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/the_basics/lib/login.dart</url>
-          <line>123</line>
+          <line>124</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">

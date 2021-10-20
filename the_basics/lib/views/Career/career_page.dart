@@ -93,6 +93,9 @@ class _CareerGuidanceState extends State<CareerGuidance> {
                 )
               ],
             ),
+            SizedBox(
+              height: 60,
+            ),
             // DestinationHeading(screenSize: screenSize),
             // DestinationCarousel(),
             // SizedBox(height: screenSize.height / 10),

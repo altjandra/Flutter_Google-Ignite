@@ -52,12 +52,12 @@ class FeaturedHeading extends StatelessWidget {
                     // fontStyle: FontStyle.italic,
                   ),
                 ),
-                Expanded(
-                  child: Text(
-                    "We're Here To Guide You",
-                    textAlign: TextAlign.end,
-                  ),
-                ),
+                // Expanded(
+                //   child: Text(
+                //     "We're Here To Guide You",
+                //     textAlign: TextAlign.end,
+                //   ),
+                // ),
               ],
             ),
     );
