@@ -15,7 +15,7 @@ class Register extends StatefulWidget {
 class _RegisterState extends State<Register> {
   final _formKey = GlobalKey<FormState>();
   User user = User("", "");
-  String url = "http://localhost:8001/register";
+  String url = "http://localhost:8082/Register";
 
 
 

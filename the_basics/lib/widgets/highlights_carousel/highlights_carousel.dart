@@ -78,28 +78,28 @@ class _HighlightsCarouselState extends State<HighlightsCarousel> {
                 });
               }
             )),
-            AspectRatio(aspectRatio: 18/8,
-            child:Center(
-                child: Text(
-                  places[_current],
-                  style: GoogleFonts.montserrat(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 50,
-                      letterSpacing: 2.0,
-                      color: Colors.black
-                  ),
-                ),
-              // child:Text(
-              //   places[_current],
-              //
-              //   style: TextStyle(
-              //     decoration: TextDecoration.none,
-              //     color: Colors.white,
-              //     fontSize: MediaQuery.of(context).size.width/15
-              //   ),
-              // )
-            )
-            )
+            // AspectRatio(aspectRatio: 18/8,
+            // child:Center(
+            //     child: Text(
+            //       places[_current],
+            //       style: GoogleFonts.montserrat(
+            //           fontWeight: FontWeight.bold,
+            //           fontSize: 50,
+            //           letterSpacing: 2.0,
+            //           color: Colors.white
+            //       ),
+            //     ),
+            //   // child:Text(
+            //   //   places[_current],
+            //   //
+            //   //   style: TextStyle(
+            //   //     decoration: TextDecoration.none,
+            //   //     color: Colors.white,
+            //   //     fontSize: MediaQuery.of(context).size.width/15
+            //   //   ),
+            //   // )
+            // )
+            // )
           ]
         )
     ),

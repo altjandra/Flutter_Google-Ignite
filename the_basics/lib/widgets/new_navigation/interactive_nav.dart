@@ -130,10 +130,15 @@ class InteractiveTextState extends State<InteractiveText> {
       onHover: (_) => _hovered(true),
       onExit: (_) => _hovered(false),
       child: Text(
+      //   style: TextStyle(
+      //       fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white),
+      // ),
+      //   fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white),
         widget.text,
         style: _hovering
             ? kPageTitleStyle.copyWith(color: Colors.indigo)
             : kPageTitleStyle,
+          // fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white),
       ),
     );
   }

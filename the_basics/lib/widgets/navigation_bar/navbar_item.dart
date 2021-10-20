@@ -8,7 +8,7 @@ class NavBarItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: TextStyle(fontSize: 18),
+      style: TextStyle(fontSize: 25),
     );
   }
 }

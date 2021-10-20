@@ -8,6 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/the_basics/lib/login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/login.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/the_basics/lib/register.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/register.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/highlights_carousel/highlights_carousel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/highlights_carousel/highlights_carousel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/navigation_bar/navbar_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/navigation_bar/navbar_item.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_basics/lib/widgets/new_navigation/interactive_nav.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_basics/lib/widgets/new_navigation/interactive_nav.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
