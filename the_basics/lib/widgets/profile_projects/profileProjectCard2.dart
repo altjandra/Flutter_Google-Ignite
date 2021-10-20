@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 
-class communityProjectCard3  extends StatelessWidget {
+class profileProjectCard2  extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -16,7 +16,7 @@ class communityProjectCard3  extends StatelessWidget {
               Stack(
                 children: [
                   Ink.image(
-                    image: AssetImage('assets/phone.jpeg'),
+                    image: AssetImage('assets/website2.jpeg'),
                     height: 240,
                     fit: BoxFit.cover,
                   ),
@@ -25,7 +25,7 @@ class communityProjectCard3  extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
                 child: Align(alignment: Alignment.centerLeft, child: Text(
-                "Dashboard"
+                "UI/UX Design Mobile"
                 ,style: TextStyle(
                   fontSize: 25.0,
                   fontWeight: FontWeight.normal

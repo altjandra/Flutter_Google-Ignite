@@ -5,7 +5,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 class HighlightsCarousel extends StatefulWidget {
-  // const DestinationCarousel({required Key key}) : super(key: key);
 
   @override
   _HighlightsCarouselState createState() => _HighlightsCarouselState();
@@ -26,13 +25,12 @@ class _HighlightsCarouselState extends State<HighlightsCarousel> {
     'cdbefb104928081.5f6d97a055414.jpg',
     'c35b2be4b09afcc1d0fadf8ccf783cb4.png',
     'phone.jpeg',
-
     'website_bugs.png',
   ];
 
   final List<String> places = [
     'E-PAYMENT',
-    'AFRICA',
+    'MENTAL HEALTH',
     'BUDGET TRACKER',
     'SOCIAL SITE',
     'COIN',
@@ -64,7 +62,6 @@ class _HighlightsCarouselState extends State<HighlightsCarousel> {
         padding: const EdgeInsets.only(bottom:160),
         child: Container(
         color: Colors.white,
-        // padding: const EdgeInsets.only(top:150),
         child: Stack(
           children: [
             CarouselSlider(items: generateImagesTiles() , 
@@ -89,15 +86,6 @@ class _HighlightsCarouselState extends State<HighlightsCarousel> {
                       color: Colors.black
                   ),
                 ),
-              // child:Text(
-              //   places[_current],
-              //
-              //   style: TextStyle(
-              //     decoration: TextDecoration.none,
-              //     color: Colors.white,
-              //     fontSize: MediaQuery.of(context).size.width/15
-              //   ),
-              // )
             )
             )
           ]

@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:the_basics/widgets/community_projects/communityProjects.dart';
-import 'package:the_basics/widgets/community_projects/communityProjects2.dart';
-import 'package:the_basics/widgets/community_projects/communityProjects3.dart';
-import 'package:the_basics/widgets/profile_projects/profile_projects.dart';
+import 'package:the_basics/widgets/profile_projects/profileProjectCard.dart';
+import 'package:the_basics/widgets/profile_projects/profileProjectCard2.dart';
+import 'package:the_basics/widgets/profile_projects/profileProjectCard3.dart';
 
 class ProfileProjectsDisplay extends StatefulWidget {
   @override
@@ -64,19 +63,20 @@ class _ProfileProjectsDisplayState extends State<ProfileProjectsDisplay> {
     Container(child:
           onClick1 ? Row(
                   children: [
-                    const SizedBox(width: 12),
-                    Expanded(child: communityProjectCard2()),
-                    const SizedBox(width: 12),
-                    Expanded(child:  communityProjectCard()),
-                    const SizedBox(width: 12),
-                    Expanded(child:  communityProjectCard3()),]
+                    const SizedBox(width: 15),
+                    Expanded(child: profileProjectCard()),
+                    const SizedBox(width: 15),
+                    Expanded(child:  profileProjectCard2()),
+                    const SizedBox(width: 15),
+                    Expanded(child:  profileProjectCard3()),
+                    const SizedBox(width: 15),]
                 ): Row(
                   children: [
-                    const SizedBox(width: 12),
-                    Expanded(child:  communityProjectCard2()),
-                    const SizedBox(width: 12),
-                    Expanded(child:  communityProjectCard()),
-                    const SizedBox(width: 12),
+                    const SizedBox(width: 15),
+                    Expanded(child:  profileProjectCard()),
+                    const SizedBox(width: 15),
+                    Expanded(child:  profileProjectCard2()),
+                    const SizedBox(width: 15),
                     ]
                 ),
               )

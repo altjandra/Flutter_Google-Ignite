@@ -1,128 +1,480 @@
 import 'package:flutter/material.dart';
 
+class communityProjectCard extends StatefulWidget {
 
-class communityProjectCard  extends StatelessWidget {
+  @override
+  _communityProjectCardState createState() => _communityProjectCardState();
+  
+
+}
+
+
+
+class _communityProjectCardState  extends State<communityProjectCard> {
+  bool _success = true;
+  bool _projectButton = false;
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      // width: 200.0,
-      // height: 300.0,
-      child: Card(
-          clipBehavior: Clip.antiAlias,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(24),
-          ),
-          child: Column(
-            children: [
-              Stack(
-                children: [
-                  Ink.image(
-                    image: AssetImage('assets/c35b2be4b09afcc1d0fadf8ccf783cb4.png'),
-                    height: 240,
-                    fit: BoxFit.cover,
-
-                  ),
-                  Positioned(
-                    bottom: 16,
-                    right: 16,
-                    left: 16,
-                    child: Text(
-                      'Telegram theme design',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                        fontSize: 24,
-                      ),
+      child: InkWell(
+        child: Card(
+            clipBehavior: Clip.antiAlias,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(24),
+            ),
+            child: Column(
+              children: [
+                Stack(
+                  children: [ 
+                    Ink.image(
+                      image: AssetImage('assets/c35b2be4b09afcc1d0fadf8ccf783cb4.png'),
+                      height: 240,
+                      fit: BoxFit.cover,
                     ),
-                  ),
-                ],
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                  MaterialButton(
-                    color: Colors.blue,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                      onPressed: (){},
-                      child: Text(
-                        "Illustrator",
-                        style: TextStyle(color: Colors.white),
-                      ),
-                  ), 
-                  Row(
-                  children: [Icon(Icons.bookmark_border_outlined),
-                  Icon(Icons.message_outlined),
-                  Icon(Icons.share)],
-                  ),
-                ],),
-              ),
-            //   const Divider(
-            // height: 10,
-            // thickness: 3,
-            // indent: 20,
-            // endIndent: 20,
-            //   ),
-              Padding(
-                padding: EdgeInsets.all(16).copyWith(bottom: 0)
-                // child: Text(
-                //   'The cat is the only domesticated species in the family Felidae and is often referred to as the domestic cat to distinguish it from the wild members of the family.',
-                //   style: TextStyle(fontSize: 16),
+                  ],
                 ),
-              Row(
-                children: [
-                  Container(
-                    padding: EdgeInsets.only(left: 25.0),
-                    child: CircleAvatar(
-                      backgroundImage: NetworkImage(
-                          "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1327&q=80"
-                      ),
-                      radius: 30.0,
-                    ),
-                  ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget> [  
-                    Container(
-                      child: Text("Samuel Goh", style: TextStyle(
-                    color: Colors.black,
-                    decoration: TextDecoration.underline))), 
-                    Container(
-                      child: Text("Submitted 5 mins ago", style: TextStyle(
-                    color: Colors.grey,
-                    fontStyle: FontStyle.italic))),
-                    ]
-                  ),
+                  padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
+                  child: Align(alignment: Alignment.centerLeft, child: Text(
+                  "Telegram Theme Design"
+                  ,style: TextStyle(
+                    fontSize: 25.0,
+                    fontWeight: FontWeight.normal
+              ),),),
                 ),
                 
-                ]
-              ),
-              Padding(padding: EdgeInsets.all(16).copyWith(bottom: 0)),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                    MaterialButton(
+                      color: Colors.blue,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                        onPressed: (){},
+                        child: Text(
+                          "Illustrator",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                    ), 
+                    Row(
+                    children: [
+                    Icon(Icons.bookmark_border_outlined),
+                    const SizedBox(width: 12),
+                    Icon(Icons.message_outlined),
+                    const SizedBox(width: 12),
+                    Icon(Icons.double_arrow_rounded),
+                    const SizedBox(width: 12)],
+                    ),
+                  ],),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(16).copyWith(bottom: 0)
+                  ),
+                Row(
+                  children: [
+                    Container(
+                      padding: EdgeInsets.only(left: 18.0),
+                      child: CircleAvatar(
+                        backgroundImage: NetworkImage(
+                            "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1327&q=80"
+                        ),
+                        radius: 30.0,
+                      ),
+                    ),
+                  
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget> [  
+                      Container(
+                        child: Text("Samuel Goh", style: TextStyle(
+                      color: Colors.black,
+                      decoration: TextDecoration.underline))), 
+                      Container(
+                        child: Text("Submitted 5 mins ago", style: TextStyle(
+                      color: Colors.grey,
+                      fontStyle: FontStyle.italic))),
+                      ]
+                    ),
+                  ),
+                  
+                  ]
+                ),
+                Padding(padding: EdgeInsets.all(16).copyWith(bottom: 0)),
+                  
                 
-              // ),
-              // ButtonBar(
-              //   alignment: MainAxisAlignment.start,
-              //   children: [
-              //     FlatButton(
-              //       child: Text('Buy Cat'),
-              //       onPressed: () {},
-              //     ),
-              //     FlatButton(
-              //       child: Text('Buy Cat Food'),
-              //       onPressed: () {},
-              //     )
-              //   ],
-              // )
-            ],
-          ),
-      ),
-    );
-  }
-}
+
+              ],
+            ),
+        ),
+        onTap: (){
+              showGeneralDialog(
+                  barrierLabel: 'label',
+                  barrierDismissible: true,
+                  barrierColor: Colors.black.withOpacity(0.5),
+                  transitionDuration: Duration(milliseconds: 300),
+                  context: context,
+                  transitionBuilder: (context, anim1, anim2, child) {
+                    return SlideTransition(
+                      position: Tween(begin: Offset(0, 1), end: Offset(0, 0))
+                          .animate(anim1),
+                      child: child,
+                    );
+                  },
+                  pageBuilder: (context, anim1, anim2) {
+                    return Align(
+                      alignment: Alignment.center,
+                      child: Container(
+                        height: 700,
+                        width: 900,
+                        // padding:
+                        //     EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                        child: Material(
+                          child: Container(
+                            color: Colors.white,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Image.asset('assets/c35b2be4b09afcc1d0fadf8ccf783cb4.png',
+                                alignment: Alignment.center,
+                                height: double.infinity,
+                                width: 450,
+                                fit: BoxFit.cover,
+                                  
+                                ),
+
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  
+                                  children: [
+                                    Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 20.0),
+                                  child: Align(alignment: Alignment.centerLeft, child: Text(
+                                  "Telegram Theme Design"
+                                  ,style: TextStyle(
+                                    fontSize: 25.0,
+                                    fontWeight: FontWeight.normal
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 10.0),
+                                  child: Text(
+                                  "To improve the notifications system of Telegram"
+                                  ,style: TextStyle(
+                                    fontSize: 13.0,
+                                    color: Colors.grey
+                                        ),
+                                      ),
+                                    ),
+                                const SizedBox(height: 20),
+                                  
+                                MaterialButton(
+                                color: Colors.blue,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                                  onPressed: (){},
+                                  child: Text(
+                                    "Illustrator",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                ), 
+
+                                const SizedBox(height: 15),
+
+                                Row(
+                                  children: [
+                                  Icon(Icons.bookmark_border_outlined),
+                                  Text("567"),
+                                  const SizedBox(width: 12),
+                                  Icon(Icons.message_outlined),
+                                  Text("30"),
+                                  const SizedBox(width: 12),
+                                  Icon(Icons.double_arrow_rounded),
+                                  Text("25"),
+                                  const SizedBox(width: 12)],
+                                  ),
+
+                                const SizedBox(height: 15),
+
+                                Row(children: [
+                                   RaisedButton(
+                                  
+                                  padding: EdgeInsets.zero,
+                                  shape: RoundedRectangleBorder(),
+                                  child: Container(
+                                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 16),
+                                    decoration: ShapeDecoration(
+                                      color: _projectButton ? Color.fromRGBO(91,184,235,1) : Color.fromRGBO(0,116,225,1),
+                                      // gradient: LinearGradient(colors: [Colors.blue, Colors.green]),
+                                      shape: RoundedRectangleBorder(),
+                                    ),
+                                    child: Text(
+                                      _projectButton ? 
+                                       "Added to Projects" : "Work for Projects" ,
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                  ),
+                                  onPressed: () {setState(() {
+                                            _projectButton = true;
+                                          
+                                          });},
+                              ),
+                              const SizedBox(width: 12),
+                                RaisedButton(
+                                  onPressed: () {},
+                                  padding: EdgeInsets.zero,
+                                  shape: RoundedRectangleBorder(),
+                                  child: Container(
+                                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 16),
+                                    decoration: ShapeDecoration(
+                                      color: Color.fromRGBO(0,116,225,1),
+                                      shape: RoundedRectangleBorder(),
+                                    ),
+                                    child: Text(
+                                      "Look for Collaborators",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                  ),
+                              ),
+                          
+                                ],
+                                  ),
+
+                                  Padding(
+                                  padding: const EdgeInsets.symmetric( vertical: 10.0),
+                                  child: Text(
+                                  "34 others are working on this\n3 are looking for collaborators",
+                                  style: TextStyle(
+                                    fontSize: 10.0,
+                                    color: Colors.grey
+                                        ),
+                                      ),
+                                    ),
+
+                                  Container(
+                                    color: Colors.grey,
+                                    height: 1,
+                                    width: 380,
+                                  ),
+
+                                  const SizedBox(height: 10),
+                                 
+                             Row(
+                                    children: [
+                                      Container(
+                                        child: CircleAvatar(
+                                          backgroundImage: NetworkImage(
+                                              "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1327&q=80"
+                                          ),
+                                          radius: 30.0,
+                                        ),
+                                      ),
+                                    Padding(
+                                      padding: const EdgeInsets.all(15.0),
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: <Widget> [  
+                                        Container(
+                                          child: Text("Samuel Goh", style: TextStyle(
+                                        color: Colors.black,
+                                        decoration: TextDecoration.underline))), 
+                                        Container(
+                                          child: Text("Submitted 5 mins ago", style: TextStyle(
+                                        color: Colors.grey,
+                                        fontStyle: FontStyle.italic))),
+                                        ]
+                                      ),
+                                    ),
+                                    
+                                    ]
+                                  ),
+
+                                  const SizedBox(height: 10),
+
+                                  Container(
+                                    color: Colors.grey,
+                                    height: 1,
+                                    width: 380,
+                                  ),
+
+                              
+                                  Row(
+                                    children: [
+                                      Container(
+                                        // padding: EdgeInsets.only(left: 18.0),
+                                        child: CircleAvatar(
+                                          backgroundImage: AssetImage("anonymous-avatar-icon-25.jpg"),
+                                          radius: 15.0,
+                                        ),
+                                      ),
+                                    Padding(
+                                      padding: const EdgeInsets.all(10.0),
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: <Widget> [  
+                                        Container(
+                                          child: Text("User", style: TextStyle(
+                                        color: Colors.black,
+                                        decoration: TextDecoration.underline))), 
+                                        Container(
+                                          child: Text("comment comment comment comment comment", style: TextStyle(
+                                        color: Colors.grey,
+                                        fontStyle: FontStyle.italic))),
+                                        ]
+                                      ),
+                                    ),
+                                    ]
+                                  ),
+
+                                  const SizedBox(height: 5),
+
+                                  Row(
+                                    children: [
+                                      Container(
+                                        // padding: EdgeInsets.only(left: 18.0),
+                                        child: CircleAvatar(
+                                          backgroundImage: AssetImage("anonymous-avatar-icon-25.jpg"),
+                                          radius: 15.0,
+                                        ),
+                                      ),
+                                    Padding(
+                                      padding: const EdgeInsets.all(10.0),
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: <Widget> [  
+                                        Container(
+                                          child: Text("User", style: TextStyle(
+                                        color: Colors.black,
+                                        decoration: TextDecoration.underline))), 
+                                        Container(
+                                          child: Text("comment comment comment comment comment", style: TextStyle(
+                                        color: Colors.grey,
+                                        fontStyle: FontStyle.italic))),
+                                        ]
+                                      ),
+                                    ),
+                                    ]
+                                  ),
+
+                                  const SizedBox(height: 5),
+
+                                  Row(
+                                    children: [
+                                      Container(
+                                        // padding: EdgeInsets.only(left: 18.0),
+                                        child: CircleAvatar(
+                                          backgroundImage: AssetImage("anonymous-avatar-icon-25.jpg"),
+                                          radius: 15.0,
+                                        ),
+                                      ),
+                                    Padding(
+                                      padding: const EdgeInsets.all(10.0),
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: <Widget> [  
+                                        Container(
+                                          child: Text("User", style: TextStyle(
+                                        color: Colors.black,
+                                        decoration: TextDecoration.underline))), 
+                                        Container(
+                                          child: Text("comment comment comment comment comment", style: TextStyle(
+                                        color: Colors.grey,
+                                        fontStyle: FontStyle.italic))),
+                                        ]
+                                      ),
+                                    ),
+                                    ]
+                                  ),
+
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Container(
+                                          margin: const EdgeInsets.all(15.0),
+                                          padding: const EdgeInsets.all(3.0),
+                                          decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.blueAccent)
+                                          ),
+                                          child: Text('Type a comment...'),
+                                        ),
+                                    
+                                              
+                                      RaisedButton(
+                                  onPressed: () {},
+                                  padding: EdgeInsets.zero,
+                                  shape: RoundedRectangleBorder(),
+                                  child: Container(
+                                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+                                    decoration: ShapeDecoration(
+                                      color: Color.fromRGBO(0,116,225,1),
+                                      // gradient: LinearGradient(colors: [Colors.blue, Colors.green]),
+                                      shape: RoundedRectangleBorder(),
+                                    ),
+                                    child: Text(
+                                      "Send",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                  ),
+                              ),
+                                      
+                                    ],
+                                  )
+            
+
+                                  
+                                  ],
+
+                                  
+                  
+                                      ),
+
+                                //  SizedBox.shrink(),
+                                    Align(alignment: Alignment.topRight,
+                                    child: IconButton(
+                                        icon: Icon(Icons.cancel),
+                                        onPressed: () {
+                                          Navigator.pop(context);
+                                          setState(() {
+                                            _success = !_success;
+                                          });
+                                        }))
+
+                            ],
+                            
+                                ),
+                              ),
+                            ),
+                          ),
+                        );
+                      }
+                    );
+                    }
+                  ),
+                );
+              }
+            }
+        
+
+           
+
+              
+
 
 

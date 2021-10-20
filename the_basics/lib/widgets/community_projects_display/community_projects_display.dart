@@ -80,28 +80,21 @@ class _CommunityProjectsDisplayState extends State<CommunityProjectsDisplay> {
     Container(child:
           onClick1 ? Row(
                   children: [
-                    const SizedBox(width: 12),
+                    const SizedBox(width: 15),
                     Expanded(child: communityProjectCard()),
-                    const SizedBox(width: 12),
+                    const SizedBox(width: 15),
                     Expanded(child: communityProjectCard2()),
-                    const SizedBox(width: 12),
-
-                    Expanded(child: communityProjectCard3()),]
+                    const SizedBox(width: 15),
+                    Expanded(child: communityProjectCard3()),
+                    const SizedBox(width: 15),]
                 ): Row(
                   children: [
-                    Expanded(child: communityProjectCard2()),
-
+                    const SizedBox(width: 15),
                     Expanded(child: communityProjectCard()),
-                    const SizedBox(width: 12)]
-                // ): Row(
-                //   children: [
-                //     const SizedBox(width: 12),
-                //     Expanded(child: communityProjectCard()),
-                //
-                //     const SizedBox(width: 12),
-                //     Expanded(child: communityProjectCard3()),
-                //     const SizedBox(width: 12),
-                //     ]
+                    const SizedBox(width: 15),
+                    Expanded(child: communityProjectCard2()),
+                    const SizedBox(width: 15)]
+
                 ),
               )
         ],
