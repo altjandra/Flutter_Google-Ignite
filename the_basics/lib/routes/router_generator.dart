@@ -12,6 +12,8 @@ import 'package:the_basics/login.dart';
 import 'package:the_basics/routes/routes.dart'; 
 import 'package:the_basics/views/home/home_view.dart';
 import 'package:the_basics/views/profile/ProfileUI2.dart';
+// import 'package:the_basics/views/dashboard_main/db_main.dart';
+import 'package:the_basics/views/Career/career_page.dart';
 // import 'package:the_basics/views/home_view.dart';
 // import 'package:the_basics//contact_page.dart';
 // import 'package:the_basics/ui/home_page.dart';
@@ -20,7 +22,7 @@ class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
         case routeCareerGuidance:
-            return MaterialPageRoute(builder: (_) => HomeView()); // this homeview() thing should be change to the various views later 
+            return MaterialPageRoute(builder: (_) => CareerGuidance()); // this homeview() thing should be change to the various views later 
         break;
         case routeMessages:
             return MaterialPageRoute(builder: (_) => HomeView());

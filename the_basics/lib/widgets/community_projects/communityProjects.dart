@@ -108,6 +108,7 @@ class _communityProjectCardState  extends State<communityProjectCard> {
                 Padding(padding: EdgeInsets.all(16).copyWith(bottom: 0)),
                   
                 
+
               ],
             ),
         ),
@@ -472,3 +473,8 @@ class _communityProjectCardState  extends State<communityProjectCard> {
         
 
            
+
+              
+
+
+
