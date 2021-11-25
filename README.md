@@ -3,7 +3,9 @@ GOOGLE IGNITE COLAB
 Introduction
 ------------
 
-Frontend of the web application built using Flutter
+“CoLab” is a platform that provides job seekers with opportunities to collaborate with others to build on applications to be put in their portfolio, as well as access to career guidance resources and mentors.
+
+CoLab is developed using Flutter framework.
 
 Demo
 ------------
