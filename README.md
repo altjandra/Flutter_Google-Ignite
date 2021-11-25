@@ -35,11 +35,12 @@ In order to accomodate that the flutter website to be launched without a backend
 comment out these lines of codes from lib/login.dart. 
 and replace with the commented portions
 
-In lib/login.dart:
+**In lib/login.dart:**
+
 <img width="811" alt="Screenshot 2021-10-20 at 11 47 19 PM" src="https://user-images.githubusercontent.com/78343366/138126767-2acc92d0-d85d-4112-96e0-f778b7c855b9.png">
 
 
 
-In lib/register.dart:
+**In lib/register.dart:**
 
 <img width="803" alt="Screenshot 2021-10-20 at 11 45 37 PM" src="https://user-images.githubusercontent.com/78343366/138126455-8224c1b7-50f1-42a9-ae76-c72c195b8301.png">
