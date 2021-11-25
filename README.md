@@ -8,7 +8,7 @@ Frontend of the web application built using Flutter
 Demo
 ------------
 
-[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
+[![Google Ignite Programme Project - CoLab Demo](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://youtu.be/LKTIIH9MO-0 "Google Ignite Programme Project - CoLab Demo")
 
 Requirements
  ------------
