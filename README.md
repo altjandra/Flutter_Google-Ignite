@@ -8,7 +8,7 @@ Frontend of the web application built using Flutter
 Demo
 ------------
 
-[![Google Ignite Programme Project - CoLab Demo](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://youtu.be/LKTIIH9MO-0 "Google Ignite Programme Project - CoLab Demo")
+[![Google Ignite Programme Project - CoLab Demo](thumbnail2.png)](https://youtu.be/LKTIIH9MO-0 "Google Ignite Programme Project - CoLab Demo")
 
 Requirements
  ------------
